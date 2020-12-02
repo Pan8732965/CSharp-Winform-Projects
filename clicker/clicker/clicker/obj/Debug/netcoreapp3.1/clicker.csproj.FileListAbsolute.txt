@@ -1,0 +1,16 @@
+D:\c#\clicker\clicker\clicker\obj\Debug\netcoreapp3.1\clicker.csprojAssemblyReference.cache
+D:\c#\clicker\clicker\clicker\obj\Debug\netcoreapp3.1\clicker.Form1.resources
+D:\c#\clicker\clicker\clicker\obj\Debug\netcoreapp3.1\clicker.Properties.Resources.resources
+D:\c#\clicker\clicker\clicker\obj\Debug\netcoreapp3.1\clicker.csproj.GenerateResource.cache
+D:\c#\clicker\clicker\clicker\obj\Debug\netcoreapp3.1\clicker.AssemblyInfoInputs.cache
+D:\c#\clicker\clicker\clicker\obj\Debug\netcoreapp3.1\clicker.AssemblyInfo.cs
+D:\c#\clicker\clicker\clicker\obj\Debug\netcoreapp3.1\clicker.csproj.CoreCompileInputs.cache
+D:\c#\clicker\clicker\clicker\bin\Debug\netcoreapp3.1\clicker.exe
+D:\c#\clicker\clicker\clicker\bin\Debug\netcoreapp3.1\clicker.deps.json
+D:\c#\clicker\clicker\clicker\bin\Debug\netcoreapp3.1\clicker.runtimeconfig.json
+D:\c#\clicker\clicker\clicker\bin\Debug\netcoreapp3.1\clicker.runtimeconfig.dev.json
+D:\c#\clicker\clicker\clicker\bin\Debug\netcoreapp3.1\clicker.dll
+D:\c#\clicker\clicker\clicker\bin\Debug\netcoreapp3.1\clicker.pdb
+D:\c#\clicker\clicker\clicker\obj\Debug\netcoreapp3.1\clicker.dll
+D:\c#\clicker\clicker\clicker\obj\Debug\netcoreapp3.1\clicker.pdb
+D:\c#\clicker\clicker\clicker\obj\Debug\netcoreapp3.1\clicker.genruntimeconfig.cache

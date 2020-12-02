@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\c#-github2\\learning_code_cs\\learning_code_cs.csproj",
+      "projectUniqueName": "d:\\c#-github\\c-sharp-learning-and-works\\learning_code_cs\\learning_code_cs.csproj",
       "projectName": "learning_code_cs",
-      "projectPath": "d:\\c#-github2\\learning_code_cs\\learning_code_cs.csproj",
+      "projectPath": "d:\\c#-github\\c-sharp-learning-and-works\\learning_code_cs\\learning_code_cs.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "d:\\c#-github2\\learning_code_cs\\obj\\",
+      "outputPath": "d:\\c#-github\\c-sharp-learning-and-works\\learning_code_cs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -32,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -58,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

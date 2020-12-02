@@ -1,0 +1,15 @@
+D:\c#\numbericupdown\numericupdown\numericupdown\bin\Debug\netcoreapp3.1\numericupdown.exe
+D:\c#\numbericupdown\numericupdown\numericupdown\bin\Debug\netcoreapp3.1\numericupdown.deps.json
+D:\c#\numbericupdown\numericupdown\numericupdown\bin\Debug\netcoreapp3.1\numericupdown.runtimeconfig.json
+D:\c#\numbericupdown\numericupdown\numericupdown\bin\Debug\netcoreapp3.1\numericupdown.runtimeconfig.dev.json
+D:\c#\numbericupdown\numericupdown\numericupdown\bin\Debug\netcoreapp3.1\numericupdown.dll
+D:\c#\numbericupdown\numericupdown\numericupdown\bin\Debug\netcoreapp3.1\numericupdown.pdb
+D:\c#\numbericupdown\numericupdown\numericupdown\obj\Debug\netcoreapp3.1\numericupdown.csprojAssemblyReference.cache
+D:\c#\numbericupdown\numericupdown\numericupdown\obj\Debug\netcoreapp3.1\numericupdown.Form1.resources
+D:\c#\numbericupdown\numericupdown\numericupdown\obj\Debug\netcoreapp3.1\numericupdown.csproj.GenerateResource.cache
+D:\c#\numbericupdown\numericupdown\numericupdown\obj\Debug\netcoreapp3.1\numericupdown.AssemblyInfoInputs.cache
+D:\c#\numbericupdown\numericupdown\numericupdown\obj\Debug\netcoreapp3.1\numericupdown.AssemblyInfo.cs
+D:\c#\numbericupdown\numericupdown\numericupdown\obj\Debug\netcoreapp3.1\numericupdown.csproj.CoreCompileInputs.cache
+D:\c#\numbericupdown\numericupdown\numericupdown\obj\Debug\netcoreapp3.1\numericupdown.dll
+D:\c#\numbericupdown\numericupdown\numericupdown\obj\Debug\netcoreapp3.1\numericupdown.pdb
+D:\c#\numbericupdown\numericupdown\numericupdown\obj\Debug\netcoreapp3.1\numericupdown.genruntimeconfig.cache

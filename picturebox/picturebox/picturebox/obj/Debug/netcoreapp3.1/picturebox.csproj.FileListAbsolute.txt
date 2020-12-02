@@ -1,0 +1,16 @@
+D:\c#\picturebox\picturebox\picturebox\bin\Debug\netcoreapp3.1\picturebox.exe
+D:\c#\picturebox\picturebox\picturebox\bin\Debug\netcoreapp3.1\picturebox.deps.json
+D:\c#\picturebox\picturebox\picturebox\bin\Debug\netcoreapp3.1\picturebox.runtimeconfig.json
+D:\c#\picturebox\picturebox\picturebox\bin\Debug\netcoreapp3.1\picturebox.runtimeconfig.dev.json
+D:\c#\picturebox\picturebox\picturebox\bin\Debug\netcoreapp3.1\picturebox.dll
+D:\c#\picturebox\picturebox\picturebox\bin\Debug\netcoreapp3.1\picturebox.pdb
+D:\c#\picturebox\picturebox\picturebox\obj\Debug\netcoreapp3.1\picturebox.csprojAssemblyReference.cache
+D:\c#\picturebox\picturebox\picturebox\obj\Debug\netcoreapp3.1\picturebox.Form1.resources
+D:\c#\picturebox\picturebox\picturebox\obj\Debug\netcoreapp3.1\picturebox.Properties.Resources.resources
+D:\c#\picturebox\picturebox\picturebox\obj\Debug\netcoreapp3.1\picturebox.csproj.GenerateResource.cache
+D:\c#\picturebox\picturebox\picturebox\obj\Debug\netcoreapp3.1\picturebox.AssemblyInfoInputs.cache
+D:\c#\picturebox\picturebox\picturebox\obj\Debug\netcoreapp3.1\picturebox.AssemblyInfo.cs
+D:\c#\picturebox\picturebox\picturebox\obj\Debug\netcoreapp3.1\picturebox.csproj.CoreCompileInputs.cache
+D:\c#\picturebox\picturebox\picturebox\obj\Debug\netcoreapp3.1\picturebox.dll
+D:\c#\picturebox\picturebox\picturebox\obj\Debug\netcoreapp3.1\picturebox.pdb
+D:\c#\picturebox\picturebox\picturebox\obj\Debug\netcoreapp3.1\picturebox.genruntimeconfig.cache

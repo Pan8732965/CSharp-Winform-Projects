@@ -1,0 +1,13 @@
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\obj\Debug\netcoreapp3.1\video-deep-learning.csprojAssemblyReference.cache
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\obj\Debug\netcoreapp3.1\video-deep-learning.AssemblyInfoInputs.cache
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\obj\Debug\netcoreapp3.1\video-deep-learning.AssemblyInfo.cs
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\obj\Debug\netcoreapp3.1\video-deep-learning.csproj.CoreCompileInputs.cache
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\bin\Debug\netcoreapp3.1\video-deep-learning.exe
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\bin\Debug\netcoreapp3.1\video-deep-learning.deps.json
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\bin\Debug\netcoreapp3.1\video-deep-learning.runtimeconfig.json
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\bin\Debug\netcoreapp3.1\video-deep-learning.runtimeconfig.dev.json
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\bin\Debug\netcoreapp3.1\video-deep-learning.dll
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\bin\Debug\netcoreapp3.1\video-deep-learning.pdb
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\obj\Debug\netcoreapp3.1\video-deep-learning.dll
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\obj\Debug\netcoreapp3.1\video-deep-learning.pdb
+D:\c#\video-deep-learning\video-deep-learning\video-deep-learning\obj\Debug\netcoreapp3.1\video-deep-learning.genruntimeconfig.cache

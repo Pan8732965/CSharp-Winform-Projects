@@ -1,0 +1,16 @@
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.exe
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.deps.json
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.runtimeconfig.json
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.runtimeconfig.dev.json
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.dll
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.pdb
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.csprojAssemblyReference.cache
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.Form1.resources
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.Properties.Resources.resources
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.csproj.GenerateResource.cache
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.AssemblyInfoInputs.cache
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.AssemblyInfo.cs
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.csproj.CoreCompileInputs.cache
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.dll
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.pdb
+D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.genruntimeconfig.cache

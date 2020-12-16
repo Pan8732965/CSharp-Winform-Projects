@@ -1,0 +1,16 @@
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\bin\Debug\netcoreapp3.1\new_calculator_gui_project.exe
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\bin\Debug\netcoreapp3.1\new_calculator_gui_project.deps.json
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\bin\Debug\netcoreapp3.1\new_calculator_gui_project.runtimeconfig.json
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\bin\Debug\netcoreapp3.1\new_calculator_gui_project.runtimeconfig.dev.json
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\bin\Debug\netcoreapp3.1\new_calculator_gui_project.dll
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\bin\Debug\netcoreapp3.1\new_calculator_gui_project.pdb
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\obj\Debug\netcoreapp3.1\new_calculator_gui_project.csprojAssemblyReference.cache
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\obj\Debug\netcoreapp3.1\new_calculator_gui_project.csproj.GenerateResource.cache
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\obj\Debug\netcoreapp3.1\new_calculator_gui_project.AssemblyInfoInputs.cache
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\obj\Debug\netcoreapp3.1\new_calculator_gui_project.AssemblyInfo.cs
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\obj\Debug\netcoreapp3.1\new_calculator_gui_project.csproj.CoreCompileInputs.cache
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\obj\Debug\netcoreapp3.1\new_calculator_gui_project.dll
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\obj\Debug\netcoreapp3.1\new_calculator_gui_project.pdb
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\obj\Debug\netcoreapp3.1\new_calculator_gui_project.genruntimeconfig.cache
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\obj\Debug\netcoreapp3.1\new_calculator_gui_project.Calculator.resources
+D:\c#\new calculator gui\new_calculator_gui_project\new_calculator_gui_project\obj\Debug\netcoreapp3.1\new_calculator_gui_project.Properties.Resources.resources

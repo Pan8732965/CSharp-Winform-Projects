@@ -12,10 +12,14 @@ namespace new_calculator_gui_project
 {
     public partial class Calculator : Form
     {
-        double value=0;
+        static double value=0;
         string operation = "";
+        string function = "";
         bool operation_clicked = false;
 
+        //problem:1.when entered the equal for the first turn,the showing number can still input the number
+        //當按完等號，顯示的數字仍然可以繼續輸入數字
+        //problem:2.the functions of sqrt and log can't use
         public Calculator()
         {
             InitializeComponent();
@@ -36,6 +40,7 @@ namespace new_calculator_gui_project
         {
             result.Clear();
             value = 0;
+            result.Text = "0";
         }
 
         private void operation_click(object sender, EventArgs e)
@@ -45,6 +50,7 @@ namespace new_calculator_gui_project
             value =double.Parse(result.Text);
             operation_clicked = true;
             showing_quation.Text = value + "" + operation;
+
         }
 
         private void equal_button_Click(object sender, EventArgs e)
@@ -65,10 +71,15 @@ namespace new_calculator_gui_project
                 case "-":
                     result.Text = (value - double.Parse(result.Text)).ToString();
                     break;
+                case "%":
+                    result.Text = (value % double.Parse(result.Text)).ToString();
+                    break;
+
                 default:
                     break;
             }// finsihed the switch
             operation_clicked = false;
+
         }
 
         private void clear_front_button_Click(object sender, EventArgs e)
@@ -81,6 +92,28 @@ namespace new_calculator_gui_project
 
         }
 
-        
+        private void funtion_clicked(object sender, EventArgs e)
+        {
+            operation_clicked = false;
+            Button b = (Button)sender;
+            function = b.Text;
+            value = double.Parse(result.Text);  //double.Parse(result.Text) is the number the user input
+            switch (function)
+            {
+                case "x²":
+                    result.Text = (Math.Pow(double.Parse(result.Text),2).ToString());
+                    break;
+                case "√":
+                    result.Text = (Math.Sqrt(double.Parse(result.Text)).ToString());
+                    break;
+                case "Log":
+                    result.Text = (Math.Log(double.Parse(result.Text)).ToString());
+                    break;
+                default:
+                    break;
+            }
+            
+
+        }
     }
 }

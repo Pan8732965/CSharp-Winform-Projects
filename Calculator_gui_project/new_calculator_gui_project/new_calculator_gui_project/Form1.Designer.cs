@@ -256,6 +256,7 @@ namespace new_calculator_gui_project
             this.button15.TabIndex = 36;
             this.button15.Text = "x²";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.funtion_clicked);
             // 
             // divide_button
             // 
@@ -288,6 +289,7 @@ namespace new_calculator_gui_project
             this.remainder_button.TabIndex = 39;
             this.remainder_button.Text = "%";
             this.remainder_button.UseVisualStyleBackColor = true;
+            this.remainder_button.Click += new System.EventHandler(this.operation_click);
             // 
             // clear_all_button
             // 

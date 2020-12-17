@@ -30,7 +30,7 @@ namespace new_calculator_gui_project
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
-            this.showing_numbers = new System.Windows.Forms.TextBox();
+            this.result = new System.Windows.Forms.TextBox();
             this.zero_button = new System.Windows.Forms.Button();
             this.one_button = new System.Windows.Forms.Button();
             this.two_button = new System.Windows.Forms.Button();
@@ -53,16 +53,22 @@ namespace new_calculator_gui_project
             this.remainder_button = new System.Windows.Forms.Button();
             this.clear_all_button = new System.Windows.Forms.Button();
             this.clear_front_button = new System.Windows.Forms.Button();
+            this.show_equation = new System.Windows.Forms.Label();
+            this.showing_quation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // showing_numbers
+            // result
             // 
-            this.showing_numbers.Location = new System.Drawing.Point(51, 25);
-            this.showing_numbers.Multiline = true;
-            this.showing_numbers.Name = "showing_numbers";
-            this.showing_numbers.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.showing_numbers.Size = new System.Drawing.Size(589, 62);
-            this.showing_numbers.TabIndex = 0;
+            this.result.Font = new System.Drawing.Font("Microsoft JhengHei UI", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.result.Location = new System.Drawing.Point(51, 25);
+            this.result.Multiline = true;
+            this.result.Name = "result";
+            this.result.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.result.Size = new System.Drawing.Size(589, 62);
+            this.result.TabIndex = 0;
+            this.result.Text = "0";
+            this.result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.result.TextChanged += new System.EventHandler(this.result_TextChanged);
             // 
             // zero_button
             // 
@@ -73,6 +79,7 @@ namespace new_calculator_gui_project
             this.zero_button.TabIndex = 1;
             this.zero_button.Text = "0";
             this.zero_button.UseVisualStyleBackColor = true;
+            this.zero_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // one_button
             // 
@@ -83,6 +90,7 @@ namespace new_calculator_gui_project
             this.one_button.TabIndex = 19;
             this.one_button.Text = "1";
             this.one_button.UseVisualStyleBackColor = true;
+            this.one_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // two_button
             // 
@@ -93,6 +101,7 @@ namespace new_calculator_gui_project
             this.two_button.TabIndex = 20;
             this.two_button.Text = "2";
             this.two_button.UseVisualStyleBackColor = true;
+            this.two_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // three_button
             // 
@@ -103,6 +112,7 @@ namespace new_calculator_gui_project
             this.three_button.TabIndex = 23;
             this.three_button.Text = "3";
             this.three_button.UseVisualStyleBackColor = true;
+            this.three_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // dot_button
             // 
@@ -115,6 +125,7 @@ namespace new_calculator_gui_project
             this.dot_button.TabIndex = 24;
             this.dot_button.Text = ".";
             this.dot_button.UseVisualStyleBackColor = false;
+            this.dot_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // minus_button
             // 
@@ -125,6 +136,7 @@ namespace new_calculator_gui_project
             this.minus_button.TabIndex = 25;
             this.minus_button.Text = "-";
             this.minus_button.UseVisualStyleBackColor = true;
+            this.minus_button.Click += new System.EventHandler(this.operation_click);
             // 
             // equal_button
             // 
@@ -136,6 +148,7 @@ namespace new_calculator_gui_project
             this.equal_button.TabIndex = 26;
             this.equal_button.Text = "=";
             this.equal_button.UseVisualStyleBackColor = false;
+            this.equal_button.Click += new System.EventHandler(this.equal_button_Click);
             // 
             // plus_button
             // 
@@ -146,6 +159,7 @@ namespace new_calculator_gui_project
             this.plus_button.TabIndex = 27;
             this.plus_button.Text = "+";
             this.plus_button.UseVisualStyleBackColor = true;
+            this.plus_button.Click += new System.EventHandler(this.operation_click);
             // 
             // four_button
             // 
@@ -156,6 +170,7 @@ namespace new_calculator_gui_project
             this.four_button.TabIndex = 28;
             this.four_button.Text = "4";
             this.four_button.UseVisualStyleBackColor = true;
+            this.four_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // seven_button
             // 
@@ -166,6 +181,7 @@ namespace new_calculator_gui_project
             this.seven_button.TabIndex = 29;
             this.seven_button.Text = "7";
             this.seven_button.UseVisualStyleBackColor = true;
+            this.seven_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // button9
             // 
@@ -186,6 +202,7 @@ namespace new_calculator_gui_project
             this.five_button.TabIndex = 31;
             this.five_button.Text = "5";
             this.five_button.UseVisualStyleBackColor = true;
+            this.five_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // eight_button
             // 
@@ -196,6 +213,7 @@ namespace new_calculator_gui_project
             this.eight_button.TabIndex = 32;
             this.eight_button.Text = "8";
             this.eight_button.UseVisualStyleBackColor = true;
+            this.eight_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // six_button
             // 
@@ -206,6 +224,7 @@ namespace new_calculator_gui_project
             this.six_button.TabIndex = 33;
             this.six_button.Text = "6";
             this.six_button.UseVisualStyleBackColor = true;
+            this.six_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // nine_button
             // 
@@ -216,6 +235,7 @@ namespace new_calculator_gui_project
             this.nine_button.TabIndex = 34;
             this.nine_button.Text = "9";
             this.nine_button.UseVisualStyleBackColor = true;
+            this.nine_button.Click += new System.EventHandler(this.one_button_Click);
             // 
             // button14
             // 
@@ -246,6 +266,7 @@ namespace new_calculator_gui_project
             this.divide_button.TabIndex = 37;
             this.divide_button.Text = "÷";
             this.divide_button.UseVisualStyleBackColor = true;
+            this.divide_button.Click += new System.EventHandler(this.operation_click);
             // 
             // multipy_button
             // 
@@ -256,6 +277,7 @@ namespace new_calculator_gui_project
             this.multipy_button.TabIndex = 38;
             this.multipy_button.Text = "×";
             this.multipy_button.UseVisualStyleBackColor = true;
+            this.multipy_button.Click += new System.EventHandler(this.operation_click);
             // 
             // remainder_button
             // 
@@ -278,6 +300,7 @@ namespace new_calculator_gui_project
             this.clear_all_button.TabIndex = 40;
             this.clear_all_button.Text = "C";
             this.clear_all_button.UseVisualStyleBackColor = false;
+            this.clear_all_button.Click += new System.EventHandler(this.clear_all_button_Click);
             // 
             // clear_front_button
             // 
@@ -290,6 +313,27 @@ namespace new_calculator_gui_project
             this.clear_front_button.TabIndex = 41;
             this.clear_front_button.Text = "CE";
             this.clear_front_button.UseVisualStyleBackColor = false;
+            this.clear_front_button.Click += new System.EventHandler(this.clear_front_button_Click);
+            // 
+            // show_equation
+            // 
+            this.show_equation.AutoSize = true;
+            this.show_equation.BackColor = System.Drawing.Color.White;
+            this.show_equation.Font = new System.Drawing.Font("思源黑體 Medium", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.show_equation.Location = new System.Drawing.Point(-413, -106);
+            this.show_equation.Name = "show_equation";
+            this.show_equation.Size = new System.Drawing.Size(0, 43);
+            this.show_equation.TabIndex = 42;
+            // 
+            // showing_quation
+            // 
+            this.showing_quation.AutoSize = true;
+            this.showing_quation.BackColor = System.Drawing.Color.White;
+            this.showing_quation.Font = new System.Drawing.Font("思源黑體 Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.showing_quation.Location = new System.Drawing.Point(51, 25);
+            this.showing_quation.Name = "showing_quation";
+            this.showing_quation.Size = new System.Drawing.Size(0, 29);
+            this.showing_quation.TabIndex = 43;
             // 
             // Calculator
             // 
@@ -298,6 +342,8 @@ namespace new_calculator_gui_project
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(678, 575);
+            this.Controls.Add(this.showing_quation);
+            this.Controls.Add(this.show_equation);
             this.Controls.Add(this.clear_front_button);
             this.Controls.Add(this.clear_all_button);
             this.Controls.Add(this.remainder_button);
@@ -320,7 +366,7 @@ namespace new_calculator_gui_project
             this.Controls.Add(this.two_button);
             this.Controls.Add(this.one_button);
             this.Controls.Add(this.zero_button);
-            this.Controls.Add(this.showing_numbers);
+            this.Controls.Add(this.result);
             this.Name = "Calculator";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Form1";
@@ -331,7 +377,7 @@ namespace new_calculator_gui_project
 
         #endregion
 
-        private System.Windows.Forms.TextBox showing_numbers;
+        private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Button zero_button;
         private System.Windows.Forms.Button one_button;
         private System.Windows.Forms.Button two_button;
@@ -354,6 +400,8 @@ namespace new_calculator_gui_project
         private System.Windows.Forms.Button remainder_button;
         private System.Windows.Forms.Button clear_all_button;
         private System.Windows.Forms.Button clear_front_button;
+        private System.Windows.Forms.Label show_equation;
+        private System.Windows.Forms.Label showing_quation;
     }
 }
 

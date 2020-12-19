@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj",
+      "projectUniqueName": "D:\\coding\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj",
       "projectName": "new_calculator_gui_project",
-      "projectPath": "D:\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj",
+      "projectPath": "D:\\coding\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\obj\\",
+      "outputPath": "D:\\coding\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

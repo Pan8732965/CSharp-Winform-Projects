@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\c#-github\\c-sharp-learning-and-works\\learning_code_cs\\learning_code_cs.csproj",
+      "projectUniqueName": "d:\\coding\\c#-github\\c-sharp-learning-and-works\\learning_code_cs\\learning_code_cs.csproj",
       "projectName": "learning_code_cs",
-      "projectPath": "d:\\c#-github\\c-sharp-learning-and-works\\learning_code_cs\\learning_code_cs.csproj",
+      "projectPath": "d:\\coding\\c#-github\\c-sharp-learning-and-works\\learning_code_cs\\learning_code_cs.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "d:\\c#-github\\c-sharp-learning-and-works\\learning_code_cs\\obj\\",
+      "outputPath": "d:\\coding\\c#-github\\c-sharp-learning-and-works\\learning_code_cs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

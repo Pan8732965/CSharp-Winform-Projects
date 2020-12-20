@@ -12,22 +12,21 @@ namespace new_calculator_gui_project
 {
     public partial class Calculator : Form
     {
-        static double value=0;
+        static double gotUserInput=0; 
+        bool gotUserResult = false;
+        bool operation_clicked = false;
         string operation = "";
         string function = "";
-        bool operation_clicked = false;
-
-        //problem:1.when entered the equal for the first turn,the showing number can still input the number
-        //當按完等號，顯示的數字仍然可以繼續輸入數字
-        //problem:2.the functions of sqrt and log can't use
-        //problem:3.when from entered the number to pressed the equal button,and pressed the operator it went wrong on the textbox.
-        //problem:4.and a lot that idk how to describe...
+        
+        //problem:1.keypressed problem;
+        
+        //problem:2.when muitipy two numbers and clicked x^2, it'll went wrong
         public Calculator()
         {
             InitializeComponent();
         }
 
-        private void one_button_Click(object sender, EventArgs e)
+        private void number_button_Click(object sender, EventArgs e)
         {
             if (result.Text == "0"||operation_clicked)
             {
@@ -40,13 +39,20 @@ namespace new_calculator_gui_project
                 if(!result.Text.Contains("."))
                     result.Text = result.Text + b.Text; //print the result
             }else
-            result.Text = result.Text + b.Text;
+            
+            if (gotUserResult == false)
+                result.Text = result.Text + b.Text;
+            else {
+                result.Text = b.Text;
+                gotUserResult = false;
+            }
+                
         }
 
         private void clear_all_button_Click(object sender, EventArgs e)//ce button
         {
             result.Clear();
-            value = 0;
+            gotUserInput = 0;
             result.Text = "0";
             showing_quation.Text = " ";
         }
@@ -54,19 +60,19 @@ namespace new_calculator_gui_project
         private void operation_click(object sender, EventArgs e) //operation button
         {
             Button b = (Button)sender;
-            if (value!=0)
+            if (gotUserInput!=0)
             {
                 equal_button.PerformClick();
                 operation_clicked = true;
                 operation = b.Text;
-                show_equation.Text = value + " " + operation;
+                showing_quation.Text = gotUserInput + " " + operation;
             }
-            else
+            else 
             {
                 operation = b.Text;
-                value =double.Parse(result.Text);
+                gotUserInput =double.Parse(result.Text);
                 operation_clicked = true;
-                showing_quation.Text = value + "" + operation;
+                showing_quation.Text = gotUserInput + "" + operation;
             }
         }
 
@@ -77,19 +83,19 @@ namespace new_calculator_gui_project
             switch (operation)
             {
                 case "×":
-                    result.Text=(value * double.Parse(result.Text)).ToString();
+                    result.Text=(gotUserInput * double.Parse(result.Text)).ToString();
                     break;
                 case "÷":
-                    result.Text = (value / double.Parse(result.Text)).ToString();
+                    result.Text = (gotUserInput / double.Parse(result.Text)).ToString();
                     break;
                 case "+":
-                    result.Text = (value + double.Parse(result.Text)).ToString();
+                    result.Text = (gotUserInput + double.Parse(result.Text)).ToString();
                     break;
                 case "-":
-                    result.Text = (value - double.Parse(result.Text)).ToString();
+                    result.Text = (gotUserInput - double.Parse(result.Text)).ToString();
                     break;
                 case "%":
-                    result.Text = (value % double.Parse(result.Text)).ToString();
+                    result.Text = (gotUserInput % double.Parse(result.Text)).ToString();
                     break;
                 
                 default:
@@ -97,8 +103,10 @@ namespace new_calculator_gui_project
             }// finsihed the switch
             //value = Int32.Parse(result.Text);
             //operation = "";
-            operation_clicked = false;
-
+          
+            operation_clicked = true;
+            gotUserInput = 0;
+            gotUserResult = true;
 
         }
 
@@ -118,26 +126,31 @@ namespace new_calculator_gui_project
             operation_clicked = false;
             Button b = (Button)sender;
             function = b.Text;
-            value = double.Parse(result.Text);  //double.Parse(result.Text) is the number the user input
+            gotUserInput = double.Parse(result.Text);  //double.Parse(result.Text) is the number the user input
             switch (function)
             {
                 case "x²":
-                    result.Text = (Math.Pow(double.Parse(result.Text),2).ToString());
+                    result.Text = (Math.Pow(double.Parse(result.Text), 2).ToString());
+                    showing_quation.Text = "x²" + "(" + gotUserInput + ")";
                     break;
                 case "√":
                     result.Text = (Math.Sqrt(double.Parse(result.Text)).ToString());
+                    showing_quation.Text = "sqrt" + "(" + gotUserInput + ")";
                     break;
                 case "Log":
                     result.Text = (Math.Log(double.Parse(result.Text)).ToString());
+                    showing_quation.Text = "Log"+"("+gotUserInput+")";
                     break;
                 default:
                     break;
             }
             
+
         }
 
         private void keyPressed(object sender, KeyPressEventArgs e)  //use keypad to enter
         {
+            
             switch (e.KeyChar.ToString())
             {
                 case "1":
@@ -182,7 +195,7 @@ namespace new_calculator_gui_project
                 case "/":
                     divide_button.PerformClick();
                     break;
-                case "=":
+                case "ENTER":
                     equal_button.PerformClick();
                     showing_quation.Text = "";
                     break;

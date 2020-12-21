@@ -1,0 +1,15 @@
+D:\coding\c#\music_player_gui\music_player_gui\obj\Debug\music_player_gui.csprojAssemblyReference.cache
+D:\coding\c#\music_player_gui\music_player_gui\obj\Debug\music_player_gui.music_player.resources
+D:\coding\c#\music_player_gui\music_player_gui\obj\Debug\music_player_gui.Properties.Resources.resources
+D:\coding\c#\music_player_gui\music_player_gui\obj\Debug\music_player_gui.csproj.GenerateResource.cache
+D:\coding\c#\music_player_gui\music_player_gui\obj\Debug\music_player_gui.csproj.CoreCompileInputs.cache
+D:\coding\c#\music_player_gui\music_player_gui\obj\Debug\music_player_gui.csproj.ResolveComReference.cache
+D:\coding\c#\music_player_gui\music_player_gui\bin\Debug\music_player_gui.exe.config
+D:\coding\c#\music_player_gui\music_player_gui\bin\Debug\music_player_gui.exe
+D:\coding\c#\music_player_gui\music_player_gui\bin\Debug\music_player_gui.pdb
+D:\coding\c#\music_player_gui\music_player_gui\obj\Debug\Interop.WMPLib.dll
+D:\coding\c#\music_player_gui\music_player_gui\obj\Debug\music_player_gui.exe
+D:\coding\c#\music_player_gui\music_player_gui\obj\Debug\music_player_gui.pdb
+D:\coding\c#\music_player_gui\music_player_gui\obj\Debug\AxInterop.WMPLib.dll
+D:\coding\c#\music_player_gui\music_player_gui\bin\Debug\Interop.WMPLib.dll
+D:\coding\c#\music_player_gui\music_player_gui\bin\Debug\AxInterop.WMPLib.dll

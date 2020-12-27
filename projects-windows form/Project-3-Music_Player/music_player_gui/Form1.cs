@@ -15,16 +15,22 @@ namespace music_player_gui
 {
     public partial class music_player : Form
     {
-        //功能:
-        /*新增瀏覽文件功能(ok)、拖曳條(audio switcher,not ok)、圖片為button(ok)
-        adding functions:music wave、shoing the name of the song、combine with play 
-        and pause button when hit the button*/
-        //bug:stop mp3 button went wrong
-        //bug:audio switcher can't follow the switcher to decrease the volume
+
+        //have to check out the label using
+        /*adding functions:music wave、audio switcher
+        combine with play and pause button when hit the button、playlist*/
+        //
+        //bug:can't clear the text from the beginning of browsing file.(ok)
+        //bug:when hit the stop mp3 button it's can't show the name of the song
+        //bug:audio switcher can't follow the switcher to decrease the music volume
+        //bug:list box can't display musics name
+        //bug:when the show_text set to autosize,the white stuff will block the text.
         SoundPlayer mSimpleSound; //soundplayer為一變數;
         WindowsMediaPlayer mPlayer;
+        
         public music_player()
         {
+            
             InitializeComponent();
             mSimpleSound = new SoundPlayer(@"C:\Users\User\Desktop\testmsuic\test2.wav");
             mPlayer = new WMPLib.WindowsMediaPlayer();
@@ -34,29 +40,27 @@ namespace music_player_gui
             new WMPLib._WMPOCXEvents_MediaErrorEventHandler(Player_MediaError);
             mPlayer.URL = "";
             mPlayer.controls.stop();
+            text_show.Text = "";//clear the text first
+            
         }
 
         private void play_music_Click(object sender, EventArgs e)//play button cicked
         {
             playSimpleSound();
-            
+            mPlayer.settings.volume = 30;
         }
+
 
         private void pause_music_Click(object sender, EventArgs e)//pause button clicked
         {
             PauseMP3File();
         }
 
-        
-
-
         private void music_player_Load(object sender, EventArgs e)
         {
             InitializeComponent();
 
         }
-
-        
 
         private void playSimpleSound()
         {
@@ -72,10 +76,12 @@ namespace music_player_gui
         private void PlayMP3File()//play music
         {
             mPlayer.controls.play();
+            mPlayer.settings.volume = 30;
         }
-        private void StopMP3File()
+        private void StopMP3File()//replay the music
         {
             mPlayer.controls.stop();
+
         }
 
         private void Player_PlayStateChange(int NewState)
@@ -86,51 +92,56 @@ namespace music_player_gui
             if ((WMPPlayState)NewState == WMPPlayState.wmppsStopped)
             {
                 //Console.WriteLine("Stop");
-                showing_text.Text = "Stop";
+                text_show.Text = "stop";
                 mPlayer.close();
             }
         }
         private void Player_MediaError(object pMediaObject)
         {
             //Console.WriteLine("Error");
-            showing_text.Text = "Error";
+            text_show.Text = "Error";
             mPlayer.close();
         }
 
-        private void searching_file_Click(object sender, EventArgs e)//browsing songs
+        public void searching_file_Click(object sender, EventArgs e)//browsing songs
         {
             OpenFileDialog searchfile = new OpenFileDialog();
+            searchfile.Multiselect = true;
             if (searchfile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string strfilename = searchfile.FileName;
                 mPlayer.URL = (strfilename);
-                showing_text.Text = "";
-                showing_text.Text = (strfilename);
-                
+                mPlayer.settings.volume = 20;
+                string getfilename = System.IO.Path.GetFileName(strfilename);//get the name
+                for (int i = 0; i < searchfile.FileNames.Length; i++)
+                {
+                    music_listBox.Items.Add(searchfile.FileNames[i]);
+                }
+                text_show.Text = "";
+                text_show.Text = ""+"現正播放:" + "\n" + getfilename+"\n";
             }
         }
 
         private void showing_text_Click(object sender, EventArgs e)
         {
-            
+
         }
-
-        
-
-        
-
-        
 
         private void audio_switcher_Scroll(object sender, ScrollEventArgs e)
         {
-            mPlayer.settings.volume = audio_switcher.Value;
+            mPlayer.settings.volume = 30;
+            //mPlayer.settings.volume = audio_switcher.Value;
 
         }
 
         private void stop_music_Click(object sender, EventArgs e)
         {
             StopMP3File();
-            
+            playSimpleSound();
+        }
+
+        private void text_show_Click(object sender, EventArgs e)
+        {
 
         }
     }

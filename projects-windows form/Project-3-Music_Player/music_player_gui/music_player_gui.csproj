@@ -147,5 +147,14 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop_v3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

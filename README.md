@@ -16,7 +16,7 @@
 This Project is inspired by the program in my C repo. So it's the program that I want to make it with GUI for a long time.  
 Now, I finally made it!(Although the interface looks very simple).But I still want to add some functions in it,maybe next time I'll back to work in this project.  
 So this is what the interface looks like:  
-<img src="https://user-images.githubusercontent.com/62552984/103291156-19620900-4a26-11eb-855c-abcb88c72109.png" width="300" length="300" />
+<img src="https://user-images.githubusercontent.com/62552984/103291156-19620900-4a26-11eb-855c-abcb88c72109.png" width="400" length="400" />
 ### *Function to add:*
 - The interface can show the numbers that user input.
 - Input number can click **Enter** with the **numericupdown** object.

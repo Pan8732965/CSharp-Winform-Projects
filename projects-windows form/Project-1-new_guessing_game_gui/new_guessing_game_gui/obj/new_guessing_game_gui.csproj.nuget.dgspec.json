@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\c#\\new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui.csproj": {}
+    "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-1-new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui.csproj": {}
   },
   "projects": {
-    "D:\\c#\\new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui.csproj": {
+    "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-1-new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\c#\\new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui.csproj",
+        "projectUniqueName": "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-1-new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui.csproj",
         "projectName": "new_guessing_game_gui",
-        "projectPath": "D:\\c#\\new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui.csproj",
+        "projectPath": "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-1-new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\c#\\new_guessing_game_gui\\new_guessing_game_gui\\new_guessing_game_gui\\obj\\",
+        "outputPath": "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-1-new_guessing_game_gui\\new_guessing_game_gui\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "D:\\coding\\c#\\music_player_gui\\music_player_gui": {}
         },
         "frameworks": {
           "netcoreapp3.1": {

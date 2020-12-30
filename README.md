@@ -26,8 +26,9 @@ This  project is also inspired in my C language repo.The GUI interface that I ta
 And I also take reference from [this video](https://www.youtube.com/watch?v=X67eC9jf2uE) because I don't even know how to start and coding.So based on this,I think it's the second important project in my whole repo. Of course,this program is now still have lots of bugs and issues that waiting to fix.  
 This the interface looks like:
 
-<img src="https://user-images.githubusercontent.com/62552984/103357455-35c97880-4aee-11eb-8af9-462ca35992e4.png" width="300" length="322">
-### *Bugs to fix:*
+<img src="https://user-images.githubusercontent.com/62552984/103357455-35c97880-4aee-11eb-8af9-462ca35992e4.png" width="300" length="322">  
+
+### *Bugs to fix:*  
 - keypressed problem
 - When muitipy two numbers and clicked x^2, it'll went wrong
 - Second time to calculate ,the value will changed into 0

@@ -1,0 +1,14 @@
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\bin\Release\music_player_gui.exe.config
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\bin\Release\music_player_gui.exe
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\bin\Release\music_player_gui.pdb
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\bin\Release\Interop.WMPLib.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\bin\Release\AxInterop.WMPLib.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\obj\Release\Interop.WMPLib.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\obj\Release\AxInterop.WMPLib.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\obj\Release\music_player_gui.csproj.ResolveComReference.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\obj\Release\music_player_gui.music_player.resources
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\obj\Release\music_player_gui.Properties.Resources.resources
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\obj\Release\music_player_gui.csproj.GenerateResource.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\obj\Release\music_player_gui.csproj.CoreCompileInputs.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\obj\Release\music_player_gui.exe
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-3-Music_Player\music_player_gui\obj\Release\music_player_gui.pdb

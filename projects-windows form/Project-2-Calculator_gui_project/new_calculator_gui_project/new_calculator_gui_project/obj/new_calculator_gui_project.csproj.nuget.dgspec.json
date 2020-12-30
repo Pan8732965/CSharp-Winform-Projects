@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\coding\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj": {}
+    "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-2-Calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj": {}
   },
   "projects": {
-    "D:\\coding\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj": {
+    "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-2-Calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\coding\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj",
+        "projectUniqueName": "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-2-Calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj",
         "projectName": "new_calculator_gui_project",
-        "projectPath": "D:\\coding\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj",
+        "projectPath": "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-2-Calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\coding\\c#\\new calculator gui\\new_calculator_gui_project\\new_calculator_gui_project\\obj\\",
+        "outputPath": "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-2-Calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "D:\\coding\\c#\\music_player_gui\\music_player_gui": {}
         },
         "frameworks": {
           "netcoreapp3.1": {

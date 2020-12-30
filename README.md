@@ -38,8 +38,8 @@ This the interface looks like:
 This Project is the most complicated one in this repo.Not the code is complicated,is the bugs and program buliding itself. So I'll try my best to fix the bugs and add some features that I want.  
 The decoder that I use is Windows Media Player.And I'm not directly use **Winodws Media Player** interface in this program,instead I use button to contact the program.  
 And this is the GUI interface looks like: 
-- Welcome:<img src="https://user-images.githubusercontent.com/62552984/103358907-ba69c600-4af1-11eb-9e3a-9b715ea0f62e.png" width="360" length="160"> 
-- Playing Music:<img src="https://user-images.githubusercontent.com/62552984/103358893-b473e500-4af1-11eb-88e5-d8a1fe31d173.png" width="360" length="160">  
+- Welcome:<img src="https://user-images.githubusercontent.com/62552984/103358907-ba69c600-4af1-11eb-9e3a-9b715ea0f62e.png" width="330" length="130"> 
+- Playing Music:<img src="https://user-images.githubusercontent.com/62552984/103358893-b473e500-4af1-11eb-88e5-d8a1fe31d173.png" width="330" length="130">  
 Yes,the interface looks very original because this project is't completly finished.
 
 ### *Bugs to fix:*

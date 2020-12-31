@@ -19,42 +19,45 @@
 這是介面的樣子:  
 <img src="https://user-images.githubusercontent.com/62552984/103291156-19620900-4a26-11eb-855c-abcb88c72109.png" width="400" length="400" />
 ### *想加入的新功能:*
-- The interface can show the numbers that user input.
-- Input number can click **Enter** with the **numericupdown** object.
-## 2.GUI Calculator:
-**Type:Windows Form**
-### *Introduction:*
-This  project is also inspired in my C language repo.The GUI interface that I take reference is from the calc which is develop by msft on windows10.  
-And I also take reference from [this video](https://www.youtube.com/watch?v=X67eC9jf2uE) because I don't even know how to start and coding.So based on this,I think it's the second important project in my whole repo. Of course,this program is now still have lots of bugs and issues that waiting to fix.  
-This the interface looks like:
+- 介面可以顯示使用者輸入的數字
+- 可以用直接藉由**numericupdown**物件然後按下**Enter**來輸入數字
+## 2.使用者介面計算機:
+**種類:Windows Form**
+### *介紹:*
+這個專案也是從我的c語言repo所啟發的.我所用的使用者介面是參考自由微軟開發的windows 10內建計算機。還有，我也從[這個影片](https://www.youtube.com/watch?v=X67eC9jf2uE)來做參考因為我根本連怎麼開始都不知道。鑑於此，我認為這是在我整個repo中第二重要的專案。當然，這個程式現在仍然有很多的問題和bugs等著去解決。
+  
+這是介面的樣子:
 
 <img src="https://user-images.githubusercontent.com/62552984/103357455-35c97880-4aee-11eb-8af9-462ca35992e4.png" width="350" length="340">  
 
-### *Bugs to fix:*  
-- keypressed problem
-- When muitipy two numbers and clicked x^2, it'll went wrong
-- Second time to calculate ,the value will changed into 0
-## 3.Music Player:
-**Type:Windows Form**
-### *Introduction:*
-This Project is the most complicated one in this repo.Not the code is complicated,is the bugs and program buliding itself. So I'll try my best to fix the bugs and add some features that I want.  
-The decoder that I use is Windows Media Player.And I'm not directly use **Winodws Media Player** interface in this program,instead I use button to contact the program.  
-And this is the GUI interface looks like: 
-- Welcome:  
-<img src="https://user-images.githubusercontent.com/62552984/103358907-ba69c600-4af1-11eb-9e3a-9b715ea0f62e.png" width="320" length="260"> 
-- Playing Music:  
-<img src="https://user-images.githubusercontent.com/62552984/103358893-b473e500-4af1-11eb-88e5-d8a1fe31d173.png" width="320" length="260">  
-Yes,the interface looks very original because this project is't completly finished.
+### *待解決的 bugs:*  
+- 鍵盤輸入問題
+- 當相加兩個數字然後點擊x平方，會發生錯誤
+- 連續第二次相加，value的值會變成0
 
-### *Bugs to fix:*
-- When hit the stop mp3 button it's can't show the name of the song
-- Audio switcher can't follow the switcher to decrease the music volume
-- List box can't display musics name
-- When the **show_text** set to **autosize**,the white stuff will block the text.
-### *Features to add:*
-- Music wave(impossible)
-- Audio switcher
-- Combine play and pause button when hit the button  
-- Music List box
+## 3.音樂撥放器:
+**種類:Windows Form**
+### *Introduction:*
+在這個repo中，這是一個最複雜的專案。不是code複雜，而是bugs和程式本身。所以，我會盡力去修理bugs以及去新增一些我想要的功能。
+我用的解碼器是Windows Media Player解碼器。但我，並沒有在這程式中直接使用**Winodws Media Player**介面，我反而使用按鈕來聯繫整個程式。
+
+這是使用者介面長的樣子: 
+- 一開始的介面(歡迎):  
+<img src="https://user-images.githubusercontent.com/62552984/103358907-ba69c600-4af1-11eb-9e3a-9b715ea0f62e.png" width="320" length="260"> 
+- 播放中:  
+<img src="https://user-images.githubusercontent.com/62552984/103358893-b473e500-4af1-11eb-88e5-d8a1fe31d173.png" width="320" length="260">  
+是的，這個介面看起來非常的陽春，因為這個計畫還沒完全完成
+
+
+### *待解決的 bugs*
+- 當按下停止按鈕，不能顯示歌名。
+- 音量選擇器不能跟著選擇器而降低音量
+- 清單盒沒辦法顯示音樂名字
+- 當 **show_text** 轉到 **autosize**,白色的東西會當住文字
+### *想加入的新功能:*
+- 音波顯示(不可能)
+- 音量選擇器
+- 將播放鍵和停止鍵合而為一  
+- 音樂清單盒
 ### ==============
-**In the end,I wish I can fix the bugs all in this repo,and add the features that I actually want.**
+**最後，我希望我可以修復在這個repo裡所有的bugs還有新增我真正想要的功能。**

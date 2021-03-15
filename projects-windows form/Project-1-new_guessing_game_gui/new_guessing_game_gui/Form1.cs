@@ -12,6 +12,7 @@ namespace new_guessing_game_gui
 {
     public partial class Form1 : Form
     {
+
         static int computernumber = 0;
         static int times = 5;
         public Form1()
@@ -30,7 +31,7 @@ namespace new_guessing_game_gui
             times--;
             timesLabel.Text = "剩下次數:" + times;
 
-            if (times == 0)
+            if (times == 0 && computernumber!=toguessnum)
             {
                 showInfosLabel.Text = " 沒有次數了!😕答案是:" + computernumber;
                 guessNumber.Enabled = false;
@@ -49,7 +50,7 @@ namespace new_guessing_game_gui
             }
             else if (computernumber == toguessnum)
             {
-                showInfosLabel.Text = "恭喜猜對了!🎉";
+                showInfosLabel.Text = "恭喜猜對了!🎉"+"答案是:"+computernumber;
                 //showInfosLabel.Location = new Point(192, 231);
                 guessNumber.Enabled = false;
 

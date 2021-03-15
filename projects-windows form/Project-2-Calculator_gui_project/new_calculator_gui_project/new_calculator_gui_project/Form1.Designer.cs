@@ -34,7 +34,7 @@ namespace new_calculator_gui_project
             this.showing_quation = new System.Windows.Forms.Label();
             this.one_button = new System.Windows.Forms.Button();
             this.equal_button = new System.Windows.Forms.Button();
-            this.ce_button = new System.Windows.Forms.Button();
+            this.back_button = new System.Windows.Forms.Button();
             this.c_button = new System.Windows.Forms.Button();
             this.sqrt = new System.Windows.Forms.Button();
             this.squre = new System.Windows.Forms.Button();
@@ -62,6 +62,7 @@ namespace new_calculator_gui_project
             this.result.Location = new System.Drawing.Point(55, 95);
             this.result.Multiline = true;
             this.result.Name = "result";
+            this.result.ReadOnly = true;
             this.result.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.result.Size = new System.Drawing.Size(589, 62);
             this.result.TabIndex = 0;
@@ -72,7 +73,7 @@ namespace new_calculator_gui_project
             // showing_quation
             // 
             this.showing_quation.BackColor = System.Drawing.Color.White;
-            this.showing_quation.Font = new System.Drawing.Font("思源黑體", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.showing_quation.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.showing_quation.Location = new System.Drawing.Point(55, 69);
             this.showing_quation.Name = "showing_quation";
             this.showing_quation.Size = new System.Drawing.Size(589, 33);
@@ -82,7 +83,7 @@ namespace new_calculator_gui_project
             // 
             // one_button
             // 
-            this.one_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.one_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.one_button.Location = new System.Drawing.Point(63, 443);
             this.one_button.Name = "one_button";
             this.one_button.Size = new System.Drawing.Size(112, 82);
@@ -90,38 +91,39 @@ namespace new_calculator_gui_project
             this.one_button.Text = "1";
             this.one_button.UseVisualStyleBackColor = true;
             this.one_button.Click += new System.EventHandler(this.number_button_Click);
-            this.one_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.one_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // equal_button
             // 
             this.equal_button.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.equal_button.Font = new System.Drawing.Font("思源黑體 Heavy", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.equal_button.Location = new System.Drawing.Point(533, 443);
+            this.equal_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.equal_button.Location = new System.Drawing.Point(537, 443);
             this.equal_button.Name = "equal_button";
-            this.equal_button.Size = new System.Drawing.Size(113, 171);
+            this.equal_button.Size = new System.Drawing.Size(109, 171);
             this.equal_button.TabIndex = 50;
             this.equal_button.Text = "=";
             this.equal_button.UseVisualStyleBackColor = false;
             this.equal_button.Click += new System.EventHandler(this.equal_button_Click);
-            this.equal_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.equal_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
-            // ce_button
+            // back_button
             // 
-            this.ce_button.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.ce_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ce_button.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.ce_button.Location = new System.Drawing.Point(533, 179);
-            this.ce_button.Name = "ce_button";
-            this.ce_button.Size = new System.Drawing.Size(113, 82);
-            this.ce_button.TabIndex = 63;
-            this.ce_button.Text = "CE";
-            this.ce_button.UseVisualStyleBackColor = false;
-            this.ce_button.Click += new System.EventHandler(this.clear_front_button_Click);
+            this.back_button.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.back_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.back_button.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.back_button.Location = new System.Drawing.Point(533, 179);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(113, 82);
+            this.back_button.TabIndex = 63;
+            this.back_button.Text = "⌫";
+            this.back_button.UseVisualStyleBackColor = false;
+            this.back_button.Click += new System.EventHandler(this.clear_front_button_Click);
+            this.back_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // c_button
             // 
             this.c_button.BackColor = System.Drawing.Color.Red;
-            this.c_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.c_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.c_button.ForeColor = System.Drawing.Color.Transparent;
             this.c_button.Location = new System.Drawing.Point(533, 267);
             this.c_button.Name = "c_button";
@@ -134,7 +136,7 @@ namespace new_calculator_gui_project
             // sqrt
             // 
             this.sqrt.BackColor = System.Drawing.Color.Coral;
-            this.sqrt.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.sqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.sqrt.Location = new System.Drawing.Point(299, 179);
             this.sqrt.Name = "sqrt";
             this.sqrt.Size = new System.Drawing.Size(111, 82);
@@ -146,7 +148,7 @@ namespace new_calculator_gui_project
             // squre
             // 
             this.squre.BackColor = System.Drawing.Color.Coral;
-            this.squre.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.squre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.squre.Location = new System.Drawing.Point(416, 179);
             this.squre.Name = "squre";
             this.squre.Size = new System.Drawing.Size(109, 82);
@@ -157,7 +159,7 @@ namespace new_calculator_gui_project
             // 
             // three_button
             // 
-            this.three_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.three_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.three_button.Location = new System.Drawing.Point(299, 443);
             this.three_button.Name = "three_button";
             this.three_button.Size = new System.Drawing.Size(111, 82);
@@ -165,12 +167,12 @@ namespace new_calculator_gui_project
             this.three_button.Text = "3";
             this.three_button.UseVisualStyleBackColor = true;
             this.three_button.Click += new System.EventHandler(this.number_button_Click);
-            this.three_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.three_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // plus_button
             // 
             this.plus_button.BackColor = System.Drawing.Color.Gray;
-            this.plus_button.Font = new System.Drawing.Font("思源黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.plus_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.plus_button.Location = new System.Drawing.Point(416, 443);
             this.plus_button.Name = "plus_button";
             this.plus_button.Size = new System.Drawing.Size(109, 82);
@@ -178,12 +180,12 @@ namespace new_calculator_gui_project
             this.plus_button.Text = "+";
             this.plus_button.UseVisualStyleBackColor = false;
             this.plus_button.Click += new System.EventHandler(this.operation_click);
-            this.plus_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.plus_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // divide_button
             // 
             this.divide_button.BackColor = System.Drawing.Color.Gray;
-            this.divide_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.divide_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.divide_button.Location = new System.Drawing.Point(416, 267);
             this.divide_button.Name = "divide_button";
             this.divide_button.Size = new System.Drawing.Size(109, 82);
@@ -191,12 +193,12 @@ namespace new_calculator_gui_project
             this.divide_button.Text = "÷";
             this.divide_button.UseVisualStyleBackColor = false;
             this.divide_button.Click += new System.EventHandler(this.operation_click);
-            this.divide_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.divide_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // multipy_button
             // 
             this.multipy_button.BackColor = System.Drawing.Color.Gray;
-            this.multipy_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.multipy_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.multipy_button.Location = new System.Drawing.Point(416, 355);
             this.multipy_button.Name = "multipy_button";
             this.multipy_button.Size = new System.Drawing.Size(109, 82);
@@ -204,12 +206,12 @@ namespace new_calculator_gui_project
             this.multipy_button.Text = "×";
             this.multipy_button.UseVisualStyleBackColor = false;
             this.multipy_button.Click += new System.EventHandler(this.operation_click);
-            this.multipy_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.multipy_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // minus_button
             // 
             this.minus_button.BackColor = System.Drawing.Color.Gray;
-            this.minus_button.Font = new System.Drawing.Font("思源黑體", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.minus_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.minus_button.Location = new System.Drawing.Point(416, 531);
             this.minus_button.Name = "minus_button";
             this.minus_button.Size = new System.Drawing.Size(109, 83);
@@ -217,13 +219,13 @@ namespace new_calculator_gui_project
             this.minus_button.Text = "-";
             this.minus_button.UseVisualStyleBackColor = false;
             this.minus_button.Click += new System.EventHandler(this.operation_click);
-            this.minus_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.minus_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // zero_button
             // 
             this.zero_button.BackColor = System.Drawing.Color.Gray;
             this.zero_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.zero_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.zero_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.zero_button.Location = new System.Drawing.Point(63, 531);
             this.zero_button.Name = "zero_button";
             this.zero_button.Size = new System.Drawing.Size(229, 83);
@@ -231,12 +233,12 @@ namespace new_calculator_gui_project
             this.zero_button.Text = "0";
             this.zero_button.UseVisualStyleBackColor = false;
             this.zero_button.Click += new System.EventHandler(this.number_button_Click);
-            this.zero_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.zero_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // nine_button
             // 
             this.nine_button.BackColor = System.Drawing.Color.White;
-            this.nine_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nine_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nine_button.Location = new System.Drawing.Point(299, 267);
             this.nine_button.Name = "nine_button";
             this.nine_button.Size = new System.Drawing.Size(111, 82);
@@ -248,7 +250,7 @@ namespace new_calculator_gui_project
             // dot_button
             // 
             this.dot_button.BackColor = System.Drawing.Color.DarkOrchid;
-            this.dot_button.Font = new System.Drawing.Font("思源黑體", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dot_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.dot_button.ForeColor = System.Drawing.Color.Transparent;
             this.dot_button.Location = new System.Drawing.Point(299, 531);
             this.dot_button.Name = "dot_button";
@@ -257,11 +259,11 @@ namespace new_calculator_gui_project
             this.dot_button.Text = ".";
             this.dot_button.UseVisualStyleBackColor = false;
             this.dot_button.Click += new System.EventHandler(this.number_button_Click);
-            this.dot_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.dot_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // eight_button
             // 
-            this.eight_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.eight_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.eight_button.Location = new System.Drawing.Point(181, 267);
             this.eight_button.Name = "eight_button";
             this.eight_button.Size = new System.Drawing.Size(112, 82);
@@ -269,11 +271,11 @@ namespace new_calculator_gui_project
             this.eight_button.Text = "8";
             this.eight_button.UseVisualStyleBackColor = true;
             this.eight_button.Click += new System.EventHandler(this.number_button_Click);
-            this.eight_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.eight_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // four_button
             // 
-            this.four_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.four_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.four_button.Location = new System.Drawing.Point(63, 355);
             this.four_button.Name = "four_button";
             this.four_button.Size = new System.Drawing.Size(112, 82);
@@ -281,11 +283,11 @@ namespace new_calculator_gui_project
             this.four_button.Text = "4";
             this.four_button.UseVisualStyleBackColor = true;
             this.four_button.Click += new System.EventHandler(this.number_button_Click);
-            this.four_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.four_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // five_button
             // 
-            this.five_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.five_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.five_button.Location = new System.Drawing.Point(181, 355);
             this.five_button.Name = "five_button";
             this.five_button.Size = new System.Drawing.Size(112, 82);
@@ -293,11 +295,11 @@ namespace new_calculator_gui_project
             this.five_button.Text = "5";
             this.five_button.UseVisualStyleBackColor = true;
             this.five_button.Click += new System.EventHandler(this.number_button_Click);
-            this.five_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.five_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // seven_button
             // 
-            this.seven_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.seven_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.seven_button.Location = new System.Drawing.Point(63, 267);
             this.seven_button.Name = "seven_button";
             this.seven_button.Size = new System.Drawing.Size(112, 82);
@@ -305,11 +307,11 @@ namespace new_calculator_gui_project
             this.seven_button.Text = "7";
             this.seven_button.UseVisualStyleBackColor = true;
             this.seven_button.Click += new System.EventHandler(this.number_button_Click);
-            this.seven_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.seven_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // six_button
             // 
-            this.six_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.six_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.six_button.Location = new System.Drawing.Point(299, 355);
             this.six_button.Name = "six_button";
             this.six_button.Size = new System.Drawing.Size(111, 82);
@@ -317,11 +319,11 @@ namespace new_calculator_gui_project
             this.six_button.Text = "6";
             this.six_button.UseVisualStyleBackColor = true;
             this.six_button.Click += new System.EventHandler(this.number_button_Click);
-            this.six_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.six_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // two_button
             // 
-            this.two_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.two_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.two_button.Location = new System.Drawing.Point(181, 445);
             this.two_button.Name = "two_button";
             this.two_button.Size = new System.Drawing.Size(111, 82);
@@ -329,12 +331,12 @@ namespace new_calculator_gui_project
             this.two_button.Text = "2";
             this.two_button.UseVisualStyleBackColor = true;
             this.two_button.Click += new System.EventHandler(this.number_button_Click);
-            this.two_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keyPressed);
+            this.two_button.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             // 
             // Log_button
             // 
             this.Log_button.BackColor = System.Drawing.Color.Coral;
-            this.Log_button.Font = new System.Drawing.Font("思源黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Log_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Log_button.Location = new System.Drawing.Point(64, 179);
             this.Log_button.Name = "Log_button";
             this.Log_button.Size = new System.Drawing.Size(228, 82);
@@ -346,7 +348,7 @@ namespace new_calculator_gui_project
             // remainder
             // 
             this.remainder.BackColor = System.Drawing.Color.Gray;
-            this.remainder.Font = new System.Drawing.Font("思源黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.remainder.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.remainder.Location = new System.Drawing.Point(537, 355);
             this.remainder.Name = "remainder";
             this.remainder.Size = new System.Drawing.Size(109, 82);
@@ -368,7 +370,7 @@ namespace new_calculator_gui_project
             this.Controls.Add(this.two_button);
             this.Controls.Add(this.one_button);
             this.Controls.Add(this.equal_button);
-            this.Controls.Add(this.ce_button);
+            this.Controls.Add(this.back_button);
             this.Controls.Add(this.c_button);
             this.Controls.Add(this.sqrt);
             this.Controls.Add(this.squre);
@@ -392,6 +394,7 @@ namespace new_calculator_gui_project
             this.Name = "Calculator";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Easy Calculator";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPressed_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -404,7 +407,7 @@ namespace new_calculator_gui_project
         private System.Windows.Forms.Label showing_quation;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button equal_button;
-        private System.Windows.Forms.Button ce_button;
+        private System.Windows.Forms.Button back_button;
         private System.Windows.Forms.Button c_button;
         private System.Windows.Forms.Button sqrt;
         private System.Windows.Forms.Button squre;

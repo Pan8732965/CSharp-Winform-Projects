@@ -14,3 +14,19 @@ D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Rele
 D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.dll
 D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.pdb
 D:\c#\new_guessing_game_gui\new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.genruntimeconfig.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.exe
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.deps.json
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.runtimeconfig.json
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.runtimeconfig.dev.json
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\bin\Release\netcoreapp3.1\new_guessing_game_gui.pdb
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.csprojAssemblyReference.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.Form1.resources
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.Properties.Resources.resources
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.csproj.GenerateResource.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.AssemblyInfoInputs.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.AssemblyInfo.cs
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.csproj.CoreCompileInputs.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.pdb
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-1-new_guessing_game_gui\new_guessing_game_gui\obj\Release\netcoreapp3.1\new_guessing_game_gui.genruntimeconfig.cache

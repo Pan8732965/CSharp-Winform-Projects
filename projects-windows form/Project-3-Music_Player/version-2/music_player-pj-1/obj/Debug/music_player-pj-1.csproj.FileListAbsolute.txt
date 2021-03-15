@@ -1,0 +1,17 @@
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\bin\Debug\music_player-pj-1.exe.config
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\bin\Debug\music_player-pj-1.exe
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\bin\Debug\music_player-pj-1.pdb
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\music_player-pj-1.csprojAssemblyReference.cache
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\music_player_pj_1.Properties.Resources.resources
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\music_player-pj-1.csproj.GenerateResource.cache
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\music_player-pj-1.csproj.CoreCompileInputs.cache
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\music_player-pj-1.exe
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\music_player-pj-1.pdb
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\bin\Debug\Interop.WMPLib.dll
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\bin\Debug\AxInterop.WMPLib.dll
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\Interop.WMPLib.dll
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\AxInterop.WMPLib.dll
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\music_player-pj-1.csproj.ResolveComReference.cache
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\music_player_pj_1.music_player.resources
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\bin\Debug\Guna.UI2.dll
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Debug\music_player-pj-1.csproj.CopyComplete

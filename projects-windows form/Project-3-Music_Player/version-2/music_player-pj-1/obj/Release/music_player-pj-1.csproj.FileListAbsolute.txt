@@ -15,3 +15,5 @@ D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Release\m
 D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Release\music_player-pj-1.pdb
 D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\bin\Release\Guna.UI2.dll
 D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\obj\Release\music_player-pj-1.csproj.CopyComplete
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\bin\Release\ReaLTaiizor.dll
+D:\coding\c#\music-player-pj-1\music_player-pj-1\music_player-pj-1\bin\Release\ReaLTaiizor.xml

@@ -42,7 +42,6 @@ namespace music_player_pj_1
             this.play_button = new System.Windows.Forms.Button();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.music_listBox = new System.Windows.Forms.ListBox();
-            this.guna2HScrollBar1 = new Guna.UI2.WinForms.Guna2HScrollBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.volume_taskbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
@@ -51,7 +50,6 @@ namespace music_player_pj_1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.guna2HScrollBar1);
             this.panel1.Controls.Add(this.last_music_btn);
             this.panel1.Controls.Add(this.text_show);
             this.panel1.Controls.Add(this.next_music_btn);
@@ -228,20 +226,6 @@ namespace music_player_pj_1
             this.music_listBox.TabIndex = 3;
             this.music_listBox.SelectedIndexChanged += new System.EventHandler(this.music_listBox_SelectedIndexChanged_1);
             // 
-            // guna2HScrollBar1
-            // 
-            this.guna2HScrollBar1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2HScrollBar1.HoverState.Parent = null;
-            this.guna2HScrollBar1.LargeChange = 10;
-            this.guna2HScrollBar1.Location = new System.Drawing.Point(194, 41);
-            this.guna2HScrollBar1.MouseWheelBarPartitions = 10;
-            this.guna2HScrollBar1.Name = "guna2HScrollBar1";
-            this.guna2HScrollBar1.PressedState.Parent = this.guna2HScrollBar1;
-            this.guna2HScrollBar1.ScrollbarSize = 17;
-            this.guna2HScrollBar1.Size = new System.Drawing.Size(300, 17);
-            this.guna2HScrollBar1.TabIndex = 9;
-            this.guna2HScrollBar1.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            // 
             // music_player
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -256,7 +240,7 @@ namespace music_player_pj_1
             this.MaximizeBox = false;
             this.Name = "music_player";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Music Player";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -280,7 +264,6 @@ namespace music_player_pj_1
         private System.Windows.Forms.ListBox music_listBox;
         private System.Windows.Forms.Button last_music_btn;
         private System.Windows.Forms.Button next_music_btn;
-        private Guna.UI2.WinForms.Guna2HScrollBar guna2HScrollBar1;
     }
 }
 

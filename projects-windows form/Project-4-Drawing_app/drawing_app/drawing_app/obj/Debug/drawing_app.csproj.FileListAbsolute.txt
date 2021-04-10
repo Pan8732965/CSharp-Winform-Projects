@@ -1,0 +1,16 @@
+D:\coding\c#\drawing_app\drawing_app\bin\Debug\drawing_app.exe.config
+D:\coding\c#\drawing_app\drawing_app\bin\Debug\drawing_app.exe
+D:\coding\c#\drawing_app\drawing_app\bin\Debug\drawing_app.pdb
+D:\coding\c#\drawing_app\drawing_app\obj\Debug\drawing_app.csprojAssemblyReference.cache
+D:\coding\c#\drawing_app\drawing_app\obj\Debug\drawing_app.Form1.resources
+D:\coding\c#\drawing_app\drawing_app\obj\Debug\drawing_app.Properties.Resources.resources
+D:\coding\c#\drawing_app\drawing_app\obj\Debug\drawing_app.csproj.GenerateResource.cache
+D:\coding\c#\drawing_app\drawing_app\obj\Debug\drawing_app.csproj.CoreCompileInputs.cache
+D:\coding\c#\drawing_app\drawing_app\obj\Debug\drawing_app.exe
+D:\coding\c#\drawing_app\drawing_app\obj\Debug\drawing_app.pdb
+D:\coding\c#\drawing_app\drawing_app\bin\Debug\ReaLTaiizor.dll
+D:\coding\c#\drawing_app\drawing_app\bin\Debug\ReaLTaiizor.xml
+D:\coding\c#\drawing_app\drawing_app\obj\Debug\drawing_app.csproj.CopyComplete
+D:\coding\c#\drawing_app\drawing_app\bin\Debug\ButtonCircle.FormsPlugin.Abstractions.dll
+D:\coding\c#\drawing_app\drawing_app\bin\Debug\ButtonCircle.FormsPlugin.Abstractions.pdb
+D:\coding\c#\drawing_app\drawing_app\bin\Debug\ButtonCircle.FormsPlugin.Abstractions.xml

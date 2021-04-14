@@ -10,19 +10,23 @@
         "projectUniqueName": "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-2-Calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj",
         "projectName": "new_calculator_gui_project",
         "projectPath": "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-2-Calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\smart\\.nuget\\packages\\",
         "outputPath": "D:\\coding\\c#-github\\c-sharp-learning-and-works\\projects-windows form\\Project-2-Calculator_gui_project\\new_calculator_gui_project\\new_calculator_gui_project\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\smart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\coding\\c#\\music_player_gui\\music_player_gui": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -57,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

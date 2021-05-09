@@ -27,10 +27,10 @@
 ### Date:2021/5/9
 - the function of the connection with the numberic and timer is completed.
 - make the start btn and pause can show and disappear when click it.
-- change the text symbol of the start btn and pause btn.
-**Bug:**
-1.the progress bar didn't work when set out the timespan.
-2.press pause btn then press start btn,it'll back to the original time.
-**Can improve:**
+- change the text symbol of the start btn and pause btn.  
+**Bug:**  
+1.the progress bar didn't work when set out the timespan.  
+2.press pause btn then press start btn,it'll back to the original time.  
+**Can improve:**  
 it can set the time in a paritcular windows.  
 like press the set time btn and it will pop out a  windows to set time,instead of in a one form.

@@ -10,3 +10,4 @@ D:\coding\c#\Timer\obj\Debug\Timer.csproj.CoreCompileInputs.cache
 D:\coding\c#\Timer\obj\Debug\Timer.csproj.CopyComplete
 D:\coding\c#\Timer\obj\Debug\Timer.exe
 D:\coding\c#\Timer\obj\Debug\Timer.pdb
+D:\coding\c#\Timer\obj\Debug\Timer.csprojAssemblyReference.cache

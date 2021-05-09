@@ -29,177 +29,157 @@ namespace Timer
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EasyTimer));
-            this.button_WOC1 = new ePOSOne.btnProduct.Button_WOC();
-            this.button_WOC2 = new ePOSOne.btnProduct.Button_WOC();
-            this.button_WOC3 = new ePOSOne.btnProduct.Button_WOC();
-            this.lostProgressBar1 = new ReaLTaiizor.Controls.LostProgressBar();
-            this.show_time = new ReaLTaiizor.Controls.BigLabel();
-            this.hopeNumeric2 = new ReaLTaiizor.Controls.HopeNumeric();
-            this.hopeNumeric3 = new ReaLTaiizor.Controls.HopeNumeric();
-            this.hopeNumeric1 = new ReaLTaiizor.Controls.HopeNumeric();
+            this.show_time_label = new ReaLTaiizor.Controls.BigLabel();
+            this.Hour_Numeric = new ReaLTaiizor.Controls.CrownNumeric();
+            this.second_Numeric = new ReaLTaiizor.Controls.CrownNumeric();
+            this.Minutes_Numeric = new ReaLTaiizor.Controls.CrownNumeric();
+            this.TimerCountdown = new System.Windows.Forms.Timer(this.components);
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.timespan_progressbar = new ReaLTaiizor.Controls.DreamProgressBar();
+            this.reset_btn = new ePOSOne.btnProduct.Button_WOC();
+            this.pause_btn = new ePOSOne.btnProduct.Button_WOC();
+            this.start_btn = new ePOSOne.btnProduct.Button_WOC();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Hour_Numeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.second_Numeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minutes_Numeric)).BeginInit();
             this.SuspendLayout();
             // 
-            // button_WOC1
+            // show_time_label
             // 
-            this.button_WOC1.BorderColor = System.Drawing.Color.White;
-            this.button_WOC1.ButtonColor = System.Drawing.Color.Tomato;
-            this.button_WOC1.FlatAppearance.BorderSize = 0;
-            this.button_WOC1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_WOC1.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_WOC1.Image = global::Timer.Properties.Resources.play_100px;
-            this.button_WOC1.Location = new System.Drawing.Point(615, 206);
-            this.button_WOC1.Name = "button_WOC1";
-            this.button_WOC1.OnHoverBorderColor = System.Drawing.Color.Tomato;
-            this.button_WOC1.OnHoverButtonColor = System.Drawing.Color.Black;
-            this.button_WOC1.OnHoverTextColor = System.Drawing.Color.White;
-            this.button_WOC1.Size = new System.Drawing.Size(139, 88);
-            this.button_WOC1.TabIndex = 5;
-            this.button_WOC1.Text = "Start";
-            this.button_WOC1.TextColor = System.Drawing.Color.White;
-            this.button_WOC1.UseVisualStyleBackColor = true;
+            this.show_time_label.AutoSize = true;
+            this.show_time_label.BackColor = System.Drawing.Color.Transparent;
+            this.show_time_label.Font = new System.Drawing.Font("Nirmala UI", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.show_time_label.ForeColor = System.Drawing.Color.White;
+            this.show_time_label.Location = new System.Drawing.Point(32, 162);
+            this.show_time_label.Name = "show_time_label";
+            this.show_time_label.Size = new System.Drawing.Size(577, 128);
+            this.show_time_label.TabIndex = 0;
+            this.show_time_label.Text = "00：00：00";
             // 
-            // button_WOC2
+            // Hour_Numeric
             // 
-            this.button_WOC2.BorderColor = System.Drawing.Color.White;
-            this.button_WOC2.ButtonColor = System.Drawing.Color.Tomato;
-            this.button_WOC2.FlatAppearance.BorderSize = 0;
-            this.button_WOC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_WOC2.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_WOC2.Image = global::Timer.Properties.Resources.play_100px;
-            this.button_WOC2.Location = new System.Drawing.Point(615, 112);
-            this.button_WOC2.Name = "button_WOC2";
-            this.button_WOC2.OnHoverBorderColor = System.Drawing.Color.Tomato;
-            this.button_WOC2.OnHoverButtonColor = System.Drawing.Color.Black;
-            this.button_WOC2.OnHoverTextColor = System.Drawing.Color.White;
-            this.button_WOC2.Size = new System.Drawing.Size(139, 88);
-            this.button_WOC2.TabIndex = 6;
-            this.button_WOC2.Text = "Pause";
-            this.button_WOC2.TextColor = System.Drawing.Color.White;
-            this.button_WOC2.UseVisualStyleBackColor = true;
+            this.Hour_Numeric.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hour_Numeric.Location = new System.Drawing.Point(54, 286);
+            this.Hour_Numeric.Name = "Hour_Numeric";
+            this.Hour_Numeric.Size = new System.Drawing.Size(120, 35);
+            this.Hour_Numeric.TabIndex = 14;
             // 
-            // button_WOC3
+            // second_Numeric
             // 
-            this.button_WOC3.BackColor = System.Drawing.Color.Tomato;
-            this.button_WOC3.BorderColor = System.Drawing.Color.White;
-            this.button_WOC3.ButtonColor = System.Drawing.Color.Turquoise;
-            this.button_WOC3.FlatAppearance.BorderSize = 0;
-            this.button_WOC3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_WOC3.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_WOC3.Image = global::Timer.Properties.Resources.play_100px;
-            this.button_WOC3.Location = new System.Drawing.Point(782, 206);
-            this.button_WOC3.Name = "button_WOC3";
-            this.button_WOC3.OnHoverBorderColor = System.Drawing.Color.Tomato;
-            this.button_WOC3.OnHoverButtonColor = System.Drawing.Color.Black;
-            this.button_WOC3.OnHoverTextColor = System.Drawing.Color.White;
-            this.button_WOC3.Size = new System.Drawing.Size(139, 88);
-            this.button_WOC3.TabIndex = 7;
-            this.button_WOC3.Text = "Reset";
-            this.button_WOC3.TextColor = System.Drawing.Color.DarkSlateGray;
-            this.button_WOC3.UseVisualStyleBackColor = false;
+            this.second_Numeric.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.second_Numeric.Location = new System.Drawing.Point(461, 286);
+            this.second_Numeric.Name = "second_Numeric";
+            this.second_Numeric.Size = new System.Drawing.Size(120, 35);
+            this.second_Numeric.TabIndex = 15;
             // 
-            // lostProgressBar1
+            // Minutes_Numeric
             // 
-            this.lostProgressBar1.BackColor = System.Drawing.Color.Tomato;
-            this.lostProgressBar1.Color = System.Drawing.Color.Snow;
-            this.lostProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
-            this.lostProgressBar1.Hover = false;
-            this.lostProgressBar1.Location = new System.Drawing.Point(90, 367);
-            this.lostProgressBar1.Name = "lostProgressBar1";
-            this.lostProgressBar1.Progress = 50;
-            this.lostProgressBar1.Size = new System.Drawing.Size(822, 32);
-            this.lostProgressBar1.TabIndex = 13;
-            this.lostProgressBar1.Text = "lostProgressBar1";
+            this.Minutes_Numeric.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Minutes_Numeric.Location = new System.Drawing.Point(257, 286);
+            this.Minutes_Numeric.Name = "Minutes_Numeric";
+            this.Minutes_Numeric.Size = new System.Drawing.Size(120, 35);
+            this.Minutes_Numeric.TabIndex = 16;
             // 
-            // show_time
+            // TimerCountdown
             // 
-            this.show_time.AutoSize = true;
-            this.show_time.BackColor = System.Drawing.Color.Transparent;
-            this.show_time.Font = new System.Drawing.Font("Nirmala UI", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.show_time.ForeColor = System.Drawing.Color.White;
-            this.show_time.Location = new System.Drawing.Point(68, 166);
-            this.show_time.Name = "show_time";
-            this.show_time.Size = new System.Drawing.Size(541, 128);
-            this.show_time.TabIndex = 0;
-            this.show_time.Text = "00 : 00 : 00";
+            this.TimerCountdown.Enabled = true;
+            this.TimerCountdown.Interval = 1000;
+            this.TimerCountdown.Tick += new System.EventHandler(this.TimerCountdown_Tick);
             // 
-            // hopeNumeric2
+            // progressBar1
             // 
-            this.hopeNumeric2.BackColor = System.Drawing.Color.White;
-            this.hopeNumeric2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
-            this.hopeNumeric2.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopeNumeric2.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopeNumeric2.BorderHoverColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric2.ButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeNumeric2.ButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeNumeric2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeNumeric2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeNumeric2.ForeColor = System.Drawing.Color.Black;
-            this.hopeNumeric2.HoverButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric2.HoverButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric2.Location = new System.Drawing.Point(272, 297);
-            this.hopeNumeric2.MaxNum = 60F;
-            this.hopeNumeric2.MinNum = 0F;
-            this.hopeNumeric2.Name = "hopeNumeric2";
-            this.hopeNumeric2.Precision = 0;
-            this.hopeNumeric2.Size = new System.Drawing.Size(120, 32);
-            this.hopeNumeric2.Step = 1F;
-            this.hopeNumeric2.Style = ReaLTaiizor.Controls.HopeNumeric.NumericStyle.LeftRight;
-            this.hopeNumeric2.TabIndex = 15;
-            this.hopeNumeric2.Text = "hopeNumeric2";
-            this.hopeNumeric2.ValueNumber = 0F;
+            this.progressBar1.Location = new System.Drawing.Point(107, 424);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(0, 0);
+            this.progressBar1.TabIndex = 17;
             // 
-            // hopeNumeric3
+            // timespan_progressbar
             // 
-            this.hopeNumeric3.BackColor = System.Drawing.Color.White;
-            this.hopeNumeric3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
-            this.hopeNumeric3.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopeNumeric3.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopeNumeric3.BorderHoverColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric3.ButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeNumeric3.ButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeNumeric3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeNumeric3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeNumeric3.ForeColor = System.Drawing.Color.Black;
-            this.hopeNumeric3.HoverButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric3.HoverButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric3.Location = new System.Drawing.Point(461, 297);
-            this.hopeNumeric3.MaxNum = 60F;
-            this.hopeNumeric3.MinNum = 0F;
-            this.hopeNumeric3.Name = "hopeNumeric3";
-            this.hopeNumeric3.Precision = 0;
-            this.hopeNumeric3.Size = new System.Drawing.Size(120, 32);
-            this.hopeNumeric3.Step = 1F;
-            this.hopeNumeric3.Style = ReaLTaiizor.Controls.HopeNumeric.NumericStyle.LeftRight;
-            this.hopeNumeric3.TabIndex = 16;
-            this.hopeNumeric3.Text = "hopeNumeric3";
-            this.hopeNumeric3.ValueNumber = 0F;
+            this.timespan_progressbar.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
+            this.timespan_progressbar.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.timespan_progressbar.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.timespan_progressbar.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.timespan_progressbar.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.timespan_progressbar.Location = new System.Drawing.Point(54, 424);
+            this.timespan_progressbar.Name = "timespan_progressbar";
+            this.timespan_progressbar.Size = new System.Drawing.Size(857, 23);
+            this.timespan_progressbar.TabIndex = 22;
+            this.timespan_progressbar.Value = 50;
             // 
-            // hopeNumeric1
+            // reset_btn
             // 
-            this.hopeNumeric1.BackColor = System.Drawing.Color.White;
-            this.hopeNumeric1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
-            this.hopeNumeric1.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopeNumeric1.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(196)))), ((int)(((byte)(204)))));
-            this.hopeNumeric1.BorderHoverColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric1.ButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeNumeric1.ButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeNumeric1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeNumeric1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeNumeric1.ForeColor = System.Drawing.Color.Black;
-            this.hopeNumeric1.HoverButtonTextColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric1.HoverButtonTextColorB = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeNumeric1.Location = new System.Drawing.Point(90, 297);
-            this.hopeNumeric1.MaxNum = 99F;
-            this.hopeNumeric1.MinNum = 0F;
-            this.hopeNumeric1.Name = "hopeNumeric1";
-            this.hopeNumeric1.Precision = 0;
-            this.hopeNumeric1.Size = new System.Drawing.Size(120, 32);
-            this.hopeNumeric1.Step = 1F;
-            this.hopeNumeric1.Style = ReaLTaiizor.Controls.HopeNumeric.NumericStyle.LeftRight;
-            this.hopeNumeric1.TabIndex = 17;
-            this.hopeNumeric1.Text = "hopeNumeric1";
-            this.hopeNumeric1.ValueNumber = 0F;
+            this.reset_btn.BackColor = System.Drawing.Color.Tomato;
+            this.reset_btn.BorderColor = System.Drawing.Color.White;
+            this.reset_btn.ButtonColor = System.Drawing.Color.Turquoise;
+            this.reset_btn.FlatAppearance.BorderSize = 0;
+            this.reset_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reset_btn.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reset_btn.Image = global::Timer.Properties.Resources.play_100px;
+            this.reset_btn.Location = new System.Drawing.Point(782, 206);
+            this.reset_btn.Name = "reset_btn";
+            this.reset_btn.OnHoverBorderColor = System.Drawing.Color.Tomato;
+            this.reset_btn.OnHoverButtonColor = System.Drawing.Color.Black;
+            this.reset_btn.OnHoverTextColor = System.Drawing.Color.White;
+            this.reset_btn.Size = new System.Drawing.Size(139, 88);
+            this.reset_btn.TabIndex = 7;
+            this.reset_btn.Text = "Reset";
+            this.reset_btn.TextColor = System.Drawing.Color.DarkSlateGray;
+            this.reset_btn.UseVisualStyleBackColor = false;
+            this.reset_btn.Click += new System.EventHandler(this.reset_btn_Click);
+            // 
+            // pause_btn
+            // 
+            this.pause_btn.BorderColor = System.Drawing.Color.White;
+            this.pause_btn.ButtonColor = System.Drawing.Color.Tomato;
+            this.pause_btn.FlatAppearance.BorderSize = 0;
+            this.pause_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pause_btn.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pause_btn.Image = global::Timer.Properties.Resources.play_100px;
+            this.pause_btn.Location = new System.Drawing.Point(615, 206);
+            this.pause_btn.Name = "pause_btn";
+            this.pause_btn.OnHoverBorderColor = System.Drawing.Color.Tomato;
+            this.pause_btn.OnHoverButtonColor = System.Drawing.Color.Black;
+            this.pause_btn.OnHoverTextColor = System.Drawing.Color.White;
+            this.pause_btn.Size = new System.Drawing.Size(139, 88);
+            this.pause_btn.TabIndex = 6;
+            this.pause_btn.Text = "❚❚";
+            this.pause_btn.TextColor = System.Drawing.Color.White;
+            this.pause_btn.UseVisualStyleBackColor = true;
+            this.pause_btn.Visible = false;
+            this.pause_btn.Click += new System.EventHandler(this.pause_btn_Click);
+            // 
+            // start_btn
+            // 
+            this.start_btn.BorderColor = System.Drawing.Color.White;
+            this.start_btn.ButtonColor = System.Drawing.Color.Tomato;
+            this.start_btn.FlatAppearance.BorderSize = 0;
+            this.start_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.start_btn.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_btn.Image = global::Timer.Properties.Resources.play_100px;
+            this.start_btn.Location = new System.Drawing.Point(615, 206);
+            this.start_btn.Name = "start_btn";
+            this.start_btn.OnHoverBorderColor = System.Drawing.Color.Tomato;
+            this.start_btn.OnHoverButtonColor = System.Drawing.Color.Black;
+            this.start_btn.OnHoverTextColor = System.Drawing.Color.White;
+            this.start_btn.Size = new System.Drawing.Size(139, 88);
+            this.start_btn.TabIndex = 5;
+            this.start_btn.Text = "▶";
+            this.start_btn.TextColor = System.Drawing.Color.White;
+            this.start_btn.UseVisualStyleBackColor = true;
+            this.start_btn.Click += new System.EventHandler(this.start_btn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Location = new System.Drawing.Point(182, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 24);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "label1";
             // 
             // EasyTimer
             // 
@@ -207,31 +187,39 @@ namespace Timer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tomato;
             this.ClientSize = new System.Drawing.Size(952, 527);
-            this.Controls.Add(this.hopeNumeric1);
-            this.Controls.Add(this.hopeNumeric3);
-            this.Controls.Add(this.hopeNumeric2);
-            this.Controls.Add(this.lostProgressBar1);
-            this.Controls.Add(this.button_WOC3);
-            this.Controls.Add(this.button_WOC2);
-            this.Controls.Add(this.button_WOC1);
-            this.Controls.Add(this.show_time);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.timespan_progressbar);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.Minutes_Numeric);
+            this.Controls.Add(this.second_Numeric);
+            this.Controls.Add(this.Hour_Numeric);
+            this.Controls.Add(this.reset_btn);
+            this.Controls.Add(this.pause_btn);
+            this.Controls.Add(this.start_btn);
+            this.Controls.Add(this.show_time_label);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EasyTimer";
             this.Text = "EasyTimer";
+            ((System.ComponentModel.ISupportInitialize)(this.Hour_Numeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.second_Numeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minutes_Numeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private ePOSOne.btnProduct.Button_WOC button_WOC1;
-        private ePOSOne.btnProduct.Button_WOC button_WOC2;
-        private ePOSOne.btnProduct.Button_WOC button_WOC3;
-        private ReaLTaiizor.Controls.LostProgressBar lostProgressBar1;
-        private ReaLTaiizor.Controls.BigLabel show_time;
-        private ReaLTaiizor.Controls.HopeNumeric hopeNumeric2;
-        private ReaLTaiizor.Controls.HopeNumeric hopeNumeric3;
-        private ReaLTaiizor.Controls.HopeNumeric hopeNumeric1;
+        private ePOSOne.btnProduct.Button_WOC start_btn;
+        private ePOSOne.btnProduct.Button_WOC pause_btn;
+        private ePOSOne.btnProduct.Button_WOC reset_btn;
+        private ReaLTaiizor.Controls.BigLabel show_time_label;
+        private ReaLTaiizor.Controls.CrownNumeric Hour_Numeric;
+        private ReaLTaiizor.Controls.CrownNumeric second_Numeric;
+        private ReaLTaiizor.Controls.CrownNumeric Minutes_Numeric;
+        private System.Windows.Forms.Timer TimerCountdown;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private ReaLTaiizor.Controls.DreamProgressBar timespan_progressbar;
+        private System.Windows.Forms.Label label1;
     }
 }
 

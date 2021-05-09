@@ -1,4 +1,4 @@
-[正體中文](Chinese.md)
+[[正體中文]](Chinese.md) [[Bug and progress report]](BugAndProgress-Report.md)
 # c-sharp-learning-and-works
 **This repo includes every my c# learning works  and projects.**
 ### Coding Environment:

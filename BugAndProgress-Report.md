@@ -49,5 +49,5 @@ like press the set time btn and it will pop out a  windows to set time,instead o
 - why the function of the text and url need to be divided.  
 
 **Important:**  
-1.the beauty of the ui need to improve. 
+1.the beauty of the ui need to improve.  
 2.the tab of the text and url is divided.But the function of some buttons are in sync with two tab.  

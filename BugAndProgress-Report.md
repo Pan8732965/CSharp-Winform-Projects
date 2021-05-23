@@ -37,6 +37,7 @@
 it can set the time in a paritcular windows.  
 like press the set time btn and it will pop out a  windows to set time,instead of in a one form.
 
+# PJ - QRcode Generator
 ### Date:2021/5/23
 
 **Bug:**  

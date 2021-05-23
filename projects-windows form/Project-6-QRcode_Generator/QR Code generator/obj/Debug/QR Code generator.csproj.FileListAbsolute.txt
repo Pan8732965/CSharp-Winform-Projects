@@ -1,0 +1,21 @@
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\QR Code generator.exe.config
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\QR Code generator.exe
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\QR Code generator.pdb
+D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR Code generator.csprojAssemblyReference.cache
+D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR_Code_generator.Form1.resources
+D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR_Code_generator.Properties.Resources.resources
+D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR Code generator.csproj.GenerateResource.cache
+D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR Code generator.csproj.CoreCompileInputs.cache
+D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR Code generator.exe
+D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR Code generator.pdb
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\MetroFramework.Design.dll
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\MetroFramework.dll
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\MetroFramework.Fonts.dll
+D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR Code generator.csproj.CopyComplete
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\IronBarCode.dll
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\IronBarCode.xml
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\Zen.Barcode.Core.dll
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\QR Code generator.exe.manifest
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\QR Code generator.application
+D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR Code generator.exe.manifest
+D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR Code generator.application

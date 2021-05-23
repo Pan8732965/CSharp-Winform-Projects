@@ -36,3 +36,17 @@
 **Can improve:**  
 it can set the time in a paritcular windows.  
 like press the set time btn and it will pop out a  windows to set time,instead of in a one form.
+
+### Date:2021/5/23
+
+**Bug:**  
+1.if the custom size were set larger than 400,the red label will show up.But the red label won't show up.   
+2.when change the size in the url mode,it will went wrong.   
+3.can't save the file in the url mode.   
+
+**Issue:**  
+- why the function of the text and url need to be divided.  
+
+**Important:**  
+1.the beauty of the ui need to improve. 
+2.the tab of the text and url is divided.But the function of some buttons are in sync with two tab.  

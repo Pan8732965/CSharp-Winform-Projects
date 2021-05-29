@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QR Code generator.exe" size="90592">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QR Code generator.exe" size="91104">
       <assemblyIdentity name="QR Code generator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+Obkbg7sn2sVDDAJgdxFQ4lKmSc/aNjF/FrwlZumYdo=</dsig:DigestValue>
+        <dsig:DigestValue>Km2m/evFHxNu6PnUm+A4BgVlhPsGVp9S2ApxmQ9OaIc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

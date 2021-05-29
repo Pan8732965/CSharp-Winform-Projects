@@ -55,6 +55,8 @@ namespace QR_Code_generator
             this.generate_btn = new System.Windows.Forms.Button();
             this.enterText_textbox = new MetroFramework.Controls.MetroTextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.URL_TabPage = new MetroFramework.Controls.MetroTabPage();
             this.warning_label = new System.Windows.Forms.Label();
             this.OK_button_url = new System.Windows.Forms.Button();
@@ -64,11 +66,7 @@ namespace QR_Code_generator
             this.generate_url_btn = new System.Windows.Forms.Button();
             this.enter_url_textbox = new MetroFramework.Controls.MetroTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.qrcode_picbox_url)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.custom_numberic_text)).BeginInit();
@@ -78,6 +76,7 @@ namespace QR_Code_generator
             ((System.ComponentModel.ISupportInitialize)(this.qr_code_picbox_text)).BeginInit();
             this.URL_TabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.custom_numberic_url)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // qrcode_picbox_url
@@ -321,7 +320,6 @@ namespace QR_Code_generator
             this.TextTabPage.Controls.Add(this.enterText_textbox);
             this.TextTabPage.Controls.Add(this.label8);
             this.TextTabPage.Controls.Add(this.panel1);
-            this.TextTabPage.Controls.Add(this.panel2);
             this.TextTabPage.Controls.Add(this.panel3);
             this.TextTabPage.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextTabPage.HorizontalScrollbarBarColor = true;
@@ -376,9 +374,9 @@ namespace QR_Code_generator
             // 
             // 
             this.enterText_textbox.CustomButton.Image = null;
-            this.enterText_textbox.CustomButton.Location = new System.Drawing.Point(314, 1);
+            this.enterText_textbox.CustomButton.Location = new System.Drawing.Point(236, 1);
             this.enterText_textbox.CustomButton.Name = "";
-            this.enterText_textbox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.enterText_textbox.CustomButton.Size = new System.Drawing.Size(16, 17);
             this.enterText_textbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.enterText_textbox.CustomButton.TabIndex = 1;
             this.enterText_textbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -412,9 +410,26 @@ namespace QR_Code_generator
             this.label8.TabIndex = 16;
             this.label8.Text = "Enter the Text：";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(352, 696);
+            this.panel1.TabIndex = 19;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(352, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(472, 696);
+            this.panel3.TabIndex = 21;
+            // 
             // URL_TabPage
             // 
-            this.URL_TabPage.Controls.Add(this.warning_label);
             this.URL_TabPage.Controls.Add(this.OK_button_url);
             this.URL_TabPage.Controls.Add(this.label1);
             this.URL_TabPage.Controls.Add(this.custom_numberic_url);
@@ -424,7 +439,6 @@ namespace QR_Code_generator
             this.URL_TabPage.Controls.Add(this.label9);
             this.URL_TabPage.Controls.Add(this.qrcode_picbox_url);
             this.URL_TabPage.Controls.Add(this.panel4);
-            this.URL_TabPage.Controls.Add(this.panel5);
             this.URL_TabPage.Controls.Add(this.panel6);
             this.URL_TabPage.HorizontalScrollbarBarColor = true;
             this.URL_TabPage.HorizontalScrollbarHighlightOnWheel = false;
@@ -445,7 +459,7 @@ namespace QR_Code_generator
             this.warning_label.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.warning_label.Font = new System.Drawing.Font("Arial Narrow", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.warning_label.ForeColor = System.Drawing.Color.Red;
-            this.warning_label.Location = new System.Drawing.Point(544, 635);
+            this.warning_label.Location = new System.Drawing.Point(3, 632);
             this.warning_label.Name = "warning_label";
             this.warning_label.Size = new System.Drawing.Size(24, 29);
             this.warning_label.TabIndex = 24;
@@ -516,9 +530,9 @@ namespace QR_Code_generator
             // 
             // 
             this.enter_url_textbox.CustomButton.Image = null;
-            this.enter_url_textbox.CustomButton.Location = new System.Drawing.Point(314, 1);
+            this.enter_url_textbox.CustomButton.Location = new System.Drawing.Point(236, 1);
             this.enter_url_textbox.CustomButton.Name = "";
-            this.enter_url_textbox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.enter_url_textbox.CustomButton.Size = new System.Drawing.Size(16, 17);
             this.enter_url_textbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.enter_url_textbox.CustomButton.TabIndex = 1;
             this.enter_url_textbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -553,54 +567,19 @@ namespace QR_Code_generator
             this.label9.TabIndex = 17;
             this.label9.Text = "Enter the URL：";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(352, 613);
-            this.panel1.TabIndex = 19;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 613);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(352, 83);
-            this.panel2.TabIndex = 20;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(352, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(472, 696);
-            this.panel3.TabIndex = 21;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(352, 613);
+            this.panel4.Size = new System.Drawing.Size(352, 696);
             this.panel4.TabIndex = 25;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 613);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(352, 83);
-            this.panel5.TabIndex = 26;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Gray;
+            this.panel6.Controls.Add(this.warning_label);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel6.Location = new System.Drawing.Point(352, 0);
             this.panel6.Name = "panel6";
@@ -634,6 +613,8 @@ namespace QR_Code_generator
             this.URL_TabPage.ResumeLayout(false);
             this.URL_TabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.custom_numberic_url)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -675,12 +656,10 @@ namespace QR_Code_generator
         private System.Windows.Forms.NumericUpDown custom_numberic_url;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label warning_label;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

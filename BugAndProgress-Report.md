@@ -51,3 +51,24 @@ like press the set time btn and it will pop out a  windows to set time,instead o
 **Important:**  
 1.the beauty of the ui need to improve.  
 2.the tab of the text and url is divided.But the function of some buttons are in sync with two tab.  
+
+# PJ - QRcode Generator
+
+### Date:2021/5/29  
+#### Learned form this project：control c# tab event and use bool to control event.
+**Bug:**  
+1.if the custom size were set larger than 400,the red label will show up.But the red label won't show up.  
+2.the custom function can't work in the url tab page. 
+3.when execute the exe file in the bin:the text enter can't generate a qrcode , it will went wrong. 
+**Need to improve:**  
+1.the design of the ui need to improve.  
+2.qrcode can have a margin.  
+3.it's the best that it can save qrcode image in a paricular form.   
+**References used:**  
+1.https://stackoverflow.com/questions/10528842/how-to-find-which-tab-page-tabcontrol-is-on  
+2.https://ironsoftware.com/csharp/barcode/tutorials/csharp-qr-code-generator/  
+3.https://en.code-bude.net/2013/10/17/qrcoder-an-open-source-qr-code-generator-implementation-in-csharp/  
+4.https://github.com/codebude/QRCoder
+--------youtube-------  
+5.https://www.youtube.com/watch?v=csSo9jzuLNQ  
+

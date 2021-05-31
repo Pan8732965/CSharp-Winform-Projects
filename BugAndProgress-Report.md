@@ -57,8 +57,8 @@ like press the set time btn and it will pop out a  windows to set time,instead o
 ### Date:2021/5/29  
 #### Learned form this project：control c# tab event and use bool to control event.
 **Bug:**  
-1.if the custom size were set larger than 400,the red label will show up.But the red label won't show up.  
-2.the custom function can't work in the url tab page. 
+1.if the custom size were set larger than 400,the red label will show up.But the red label won't show up.    
+2.the custom function can't work in the url tab page.   
 3.when execute the exe file in the bin:the text enter can't generate a qrcode , it will went wrong.  
 **Need to improve:**  
 1.the design of the ui need to improve.  

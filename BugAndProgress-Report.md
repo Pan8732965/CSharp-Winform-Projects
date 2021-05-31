@@ -68,7 +68,7 @@ like press the set time btn and it will pop out a  windows to set time,instead o
 1.https://stackoverflow.com/questions/10528842/how-to-find-which-tab-page-tabcontrol-is-on  
 2.https://ironsoftware.com/csharp/barcode/tutorials/csharp-qr-code-generator/  
 3.https://en.code-bude.net/2013/10/17/qrcoder-an-open-source-qr-code-generator-implementation-in-csharp/  
-4.https://github.com/codebude/QRCoder
+4.https://github.com/codebude/QRCoder    
 --------youtube-------  
 5.https://www.youtube.com/watch?v=csSo9jzuLNQ  
 

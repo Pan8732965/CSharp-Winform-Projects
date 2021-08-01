@@ -19,3 +19,8 @@ D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\QR Code generator.exe
 D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\QR Code generator.application
 D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR Code generator.exe.manifest
 D:\coding\c#\QR Code generator\QR Code generator\obj\Debug\QR Code generator.application
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\QRCoder.dll
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\zxing.dll
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\zxing.presentation.dll
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\zxing.xml
+D:\coding\c#\QR Code generator\QR Code generator\bin\Debug\zxing.presentation.xml

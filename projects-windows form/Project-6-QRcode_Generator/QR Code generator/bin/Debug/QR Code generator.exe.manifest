@@ -90,14 +90,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QR Code generator.exe" size="92128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QR Code generator.exe" size="93664">
       <assemblyIdentity name="QR Code generator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nzftt/Jc7FS6pBWw1FKtHTR2ABNehjpro2mzufRtVwI=</dsig:DigestValue>
+        <dsig:DigestValue>df9TtvT5OQ1ETy/OxZ1aiXqzYLpHAwWP3wXwSgh8kDQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QRCoder.dll" size="126464">
+      <assemblyIdentity name="QRCoder" version="1.4.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Kr9CFgMCsPROp9zC4cHvkQEG34g1sNlPnO2UKGVbieE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,6 +122,30 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>9Vm1JK2AL/rsaoGmFVvwymeWqPKWiZCuqbZacVfJS2o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zxing.dll" size="483328">
+      <assemblyIdentity name="zxing" version="0.16.6.0" publicKeyToken="4E88037AC681FE60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iUVcNz85s1YU8iFFt+TAu5tjPwt0lGIThg+I/c12nvs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zxing.presentation.dll" size="19968">
+      <assemblyIdentity name="zxing.presentation" version="0.16.6.0" publicKeyToken="4E88037AC681FE60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tEDT1RDRiRKUCaSjAIvG/m2tNPzBhudTQ2UYDmZET5w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

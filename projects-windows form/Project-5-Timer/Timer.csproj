@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo-ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="ReaLTaiizor, Version=3.7.8.4, Culture=neutral, processorArchitecture=MSIL">
@@ -100,6 +106,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\play_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomato1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomato2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomato3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomatoUsedLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomatoUsedLabel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo-ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

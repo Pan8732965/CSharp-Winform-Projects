@@ -355,9 +355,9 @@ namespace QR_Code_generator
             // 
             // 
             this.enterText_textbox.CustomButton.Image = null;
-            this.enterText_textbox.CustomButton.Location = new System.Drawing.Point(314, 1);
+            this.enterText_textbox.CustomButton.Location = new System.Drawing.Point(236, 1);
             this.enterText_textbox.CustomButton.Name = "";
-            this.enterText_textbox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.enterText_textbox.CustomButton.Size = new System.Drawing.Size(16, 17);
             this.enterText_textbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.enterText_textbox.CustomButton.TabIndex = 1;
             this.enterText_textbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -523,9 +523,9 @@ namespace QR_Code_generator
             // 
             // 
             this.enter_url_textbox.CustomButton.Image = null;
-            this.enter_url_textbox.CustomButton.Location = new System.Drawing.Point(314, 1);
+            this.enter_url_textbox.CustomButton.Location = new System.Drawing.Point(236, 1);
             this.enter_url_textbox.CustomButton.Name = "";
-            this.enter_url_textbox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.enter_url_textbox.CustomButton.Size = new System.Drawing.Size(16, 17);
             this.enter_url_textbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.enter_url_textbox.CustomButton.TabIndex = 1;
             this.enter_url_textbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;

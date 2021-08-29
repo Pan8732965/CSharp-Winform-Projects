@@ -10,28 +10,35 @@ using System.Windows.Forms;
 
 namespace drawing_app
 {
-    //public class InkCanvas : System.Windows.FrameworkElement, System.Windows.Markup.IAddChild;
+    
     public partial class Form1 : Form
     {
         Graphics g;
         public Point current = new Point();
         public Point old = new Point();
         public Pen p = new Pen(Color.Black,5);
-        //public float width;
-        //public Pen pe = new Pen(Color.White, 15); // eraser
-        //public int x,y = -1;
-        //public bool moving = false;
-        /* bug1.how to write switch or if statement to choose color at a time.Instead of setting clicked events indivitual.
-        //2.eraser method
-        //3.the process of the taskbar won't follow up with the numberic.The solution is as same as the numberic.*/
-        //issue:idk to find the last color.<sol>:google.
         Pen pen;
-        
+        /*
+         * 1. to do:
+            (1) change pen brush.
+            (2) bucket
+            (3) save file(ok)
+           2. not do:
+            (1) copy and paste
+            (2) crop
+            (3) zoom
+           3. maybe can try:
+            (1) save file
+            (2)undo and redo
+           4.bug:
+               the save image is empty.
+         * */
+
 
         public Form1()
         {
             InitializeComponent();
-            g = panel2.CreateGraphics();//to make it can draw on the panel
+            g = EmptyCanva.CreateGraphics();//to make it can draw on the panel
             p.SetLineCap(System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.DashCap.Round);// make paint smooth
             //pe.SetLineCap(System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.DashCap.Round);
         }
@@ -45,10 +52,11 @@ namespace drawing_app
 
         private void pen_btn_Click(object sender, EventArgs e)
         {
-            g = panel2.CreateGraphics(); 
+            //g = panel2.CreateGraphics(); 
+            g = EmptyCanva.CreateGraphics();
         }
 
-        private void panel2_MouseDown(object sender, MouseEventArgs e)//the panel for painting
+        private void EmptyCanva_MouseDown(object sender, MouseEventArgs e)//the panel for painting
         {
             old = e.Location;
 
@@ -59,7 +67,7 @@ namespace drawing_app
 
         }
 
-        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        private void EmptyCanva_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -76,7 +84,7 @@ namespace drawing_app
             }*/
         }
 
-        private void panel2_MouseUp(object sender, MouseEventArgs e)
+        private void EmptyCanva_MouseUp(object sender, MouseEventArgs e)
         {
             /*moving = false;
             x = -1;
@@ -85,7 +93,8 @@ namespace drawing_app
 
         private void clear_btn_Click(object sender, EventArgs e)
         {
-            panel2.Invalidate();
+            
+            EmptyCanva.Invalidate();
         }
 
         private void roundButton1_Click(object sender, EventArgs e)
@@ -128,6 +137,7 @@ namespace drawing_app
             // Fill rectangle to screen.
             //e.g.FillRectangle(blueBrush, rect);
         }
+        //switch()
 
         private void roundButton10_Click(object sender, EventArgs e)
         {
@@ -212,6 +222,49 @@ namespace drawing_app
         private void roundButton19_Click(object sender, EventArgs e)
         {
             p.Color = System.Drawing.Color.Purple;//-
+        }
+
+        private void nightLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void savefile_btn_Click(object sender, EventArgs e)
+        {
+            int width = EmptyCanva.Size.Width;
+            int height = EmptyCanva.Size.Height;
+
+            Bitmap bm = new Bitmap(width, height);
+            //EmptyCanva.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
+
+            SaveFileDialog sf = new SaveFileDialog();
+            //sf.FileName = "url" + savefilenumber + "_qrcode";
+            sf.Filter = "Bitmap Image (.bmp)|*.bmp|Gif Image (.gif)|*.gif|JPEG Image (.jpeg)|*.jpeg|Png Image (.png)|*.png|Tiff Image (.tiff)|*.tiff|Wmf Image (.wmf)|*.wmf";
+            sf.ShowDialog();
+            var path = sf.FileName;
+            bm.Save(path);
+            MessageBox.Show("Saved successfully!✔️");
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmptyCanva_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            old = e.Location;
+        }
+
+        private void EmptyCanva_MouseMove_1(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                current = e.Location;
+                g.DrawLine(p, old, current);
+                old = current;
+            }
         }
     }
 }

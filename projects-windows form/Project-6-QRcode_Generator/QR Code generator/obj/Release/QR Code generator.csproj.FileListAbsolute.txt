@@ -24,3 +24,29 @@ D:\coding\c#\QR Code generator\QR Code generator\bin\Release\zxing.dll
 D:\coding\c#\QR Code generator\QR Code generator\bin\Release\zxing.presentation.dll
 D:\coding\c#\QR Code generator\QR Code generator\bin\Release\zxing.xml
 D:\coding\c#\QR Code generator\QR Code generator\bin\Release\zxing.presentation.xml
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\QR Code generator.exe.config
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\QR Code generator.exe.manifest
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\QR Code generator.application
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\QR Code generator.exe
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\QR Code generator.pdb
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\IronBarCode.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\MetroFramework.Design.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\MetroFramework.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\MetroFramework.Fonts.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\QRCoder.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\Zen.Barcode.Core.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\zxing.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\zxing.presentation.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\IronBarCode.xml
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\zxing.xml
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\bin\Release\zxing.presentation.xml
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\obj\Release\QR_Code_generator.Form1.resources
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\obj\Release\QR_Code_generator.Properties.Resources.resources
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\obj\Release\QR Code generator.csproj.GenerateResource.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\obj\Release\QR Code generator.csproj.CoreCompileInputs.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\obj\Release\QR Code generator.exe.manifest
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\obj\Release\QR Code generator.application
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\obj\Release\QR Code generator.csproj.CopyComplete
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\obj\Release\QR Code generator.exe
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\obj\Release\QR Code generator.pdb
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-6-QRcode_Generator\QR Code generator\obj\Release\QR Code generator.csproj.AssemblyReference.cache

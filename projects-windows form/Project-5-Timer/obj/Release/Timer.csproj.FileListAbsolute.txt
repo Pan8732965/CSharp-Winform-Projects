@@ -1,0 +1,13 @@
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\bin\Release\Timer.exe.config
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\bin\Release\Timer.exe
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\bin\Release\Timer.pdb
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\bin\Release\ReaLTaiizor.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\bin\Release\ReaLTaiizor.xml
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\obj\Release\Timer.csproj.AssemblyReference.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\obj\Release\Timer.EasyTimer.resources
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\obj\Release\Timer.Properties.Resources.resources
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\obj\Release\Timer.csproj.GenerateResource.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\obj\Release\Timer.csproj.CoreCompileInputs.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\obj\Release\Timer.csproj.CopyComplete
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\obj\Release\Timer.exe
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-5-Timer\obj\Release\Timer.pdb

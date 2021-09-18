@@ -7,221 +7,172 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
 
 namespace drawing_app
 {
     
     public partial class Form1 : Form
     {
-        Graphics g;
-        public Point current = new Point();
-        public Point old = new Point();
-        public Pen p = new Pen(Color.Black,5);
-        Pen pen;
+        Bitmap myImage;
+        int PBwidth, PBheight;//get the width and height of the picbox to create new canva weight and height
+        int currentXpos, currentYpos;
+        bool beginPaint = true;
+        bool beginMove = false;
+        int SavefileNumber = 1;
+        public Pen pen = new Pen(Color.Black,5); //new main pen create
+        public Pen eraser = new Pen(Color.White, 20); //new eraser
+
+
         /*
-         * 1. to do:
-            (1) change pen brush.
-            (2) bucket
-            (3) save file(ok)
-           2. not do:
-            (1) copy and paste
-            (2) crop
-            (3) zoom
-           3. maybe can try:
-            (1) save file
-            (2)undo and redo
-           4.bug:
-               the save image is empty.
-         * */
+           bug:
+               1.it will start to draw without any click initially.(ok)
+               2.the pen in picbox is without antialiasing(ok)
+               3. the pen of shape is strange
+               4.when clcik the pen btn , canva will reset(ok)
+               5.when click the pen btn then click eraser , the pen color will turned into white. (can't back to oringinal color.)
+          */
 
 
+       
         public Form1()
         {
             InitializeComponent();
-            g = EmptyCanva.CreateGraphics();//to make it can draw on the panel
-            p.SetLineCap(System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.DashCap.Round);// make paint smooth
-            //pe.SetLineCap(System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.LineCap.Round, System.Drawing.Drawing2D.DashCap.Round);
+            
         }
 
         private void dungeonTrackBar1_ValueChanged()
         {
-            p.Width = thickness_TrackBar.Value;
-           /*float p.Width = float.Parse(p.width);
-            show_ptx_Label.Text = float.Parse(p.Width);*/
+            pen.Width = thickness_TrackBar.Value;
+            thickness_Numeric.Value = thickness_TrackBar.Value;
+           
         }
 
         private void pen_btn_Click(object sender, EventArgs e)
         {
-            //g = panel2.CreateGraphics(); 
-            g = EmptyCanva.CreateGraphics();
-        }
-
-        private void EmptyCanva_MouseDown(object sender, MouseEventArgs e)//the panel for painting
-        {
-            old = e.Location;
-
-            //gObject.DrawLine(blackPen, 10, 10, 400, 375);//just write a  straight line
-            /*moving = true;
-            x = e.X;//to get the x and y location while mouse moving
-            y = e.Y;*/
-
-        }
-
-        private void EmptyCanva_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                current = e.Location;
-                g.DrawLine(p, old, current);
-                old = current;
-            }
+            beginPaint = true;
+            Canva.Image = myImage;
             
-            /*if(moving=false && x!=-1 && y != -1)
-            {
-                g.DrawLine(pen, new Point(x, y), e.Location);
-                x = e.X;
-                y = e.Y;
-            }*/
         }
 
-        private void EmptyCanva_MouseUp(object sender, MouseEventArgs e)
-        {
-            /*moving = false;
-            x = -1;
-            y = -1;*/
-        }
-
+        
         private void clear_btn_Click(object sender, EventArgs e)
         {
+            Graphics graphic = Graphics.FromImage(Canva.Image);
+            graphic.Clear(Color.White);//Color to fill the background and reset the box
+            graphic.Dispose();
+            Canva.Refresh();
             
-            EmptyCanva.Invalidate();
         }
 
         private void roundButton1_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.Black;
+            pen.Color = System.Drawing.Color.Black;
         }
 
         private void roundButton12_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.Gray;
+            pen.Color = System.Drawing.Color.Gray;
         }
 
         private void roundButton11_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.DarkRed;
+            pen.Color = System.Drawing.Color.DarkRed;
         }
 
         private void eraser_btn_Click(object sender, EventArgs e)
         {
-            /*inkCanvas1.EditingModeInverted = InkCanvasEditingMode.EraseByPoint;
-            inkCanvas1.EraserShape = new EllipseStylusShape(5, 5);*/
-            /*current = e.Location;
-            g.DrawLine(new Pen(Color.White,Width), old, current);
-            old = current;*/
-            p.Color = System.Drawing.Color.White;
+            pen.Color = System.Drawing.Color.White;
         }
 
         private void thickness_Numeric_ValueChanged(object sender, EventArgs e)
         {
-            p.Width = (float)thickness_Numeric.Value;
+            pen.Width = (float)thickness_Numeric.Value;
         }
-
-        private void PaintBucket_btn_Click(object sender, EventArgs e)
-        {
-            SolidBrush blueBrush = new SolidBrush(Color.Blue);
-
-            // Create rectangle.
-            Rectangle rect = new Rectangle(0, 0, 200, 200);
-
-            // Fill rectangle to screen.
-            //e.g.FillRectangle(blueBrush, rect);
-        }
-        //switch()
 
         private void roundButton10_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.Red;
+            pen.Color = System.Drawing.Color.Red;
         }
 
         private void roundButton9_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.OrangeRed;
+            pen.Color = System.Drawing.Color.OrangeRed;
         }
 
         private void roundButton8_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.Yellow;
+            pen.Color = System.Drawing.Color.Yellow;
         }
 
         private void roundButton7_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.Green;
+            pen.Color = System.Drawing.Color.Green;
         }
 
         private void roundButton6_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.Blue;//-
+            pen.Color = System.Drawing.Color.Blue;
         }
 
         private void roundButton5_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.DarkBlue;//-
+            pen.Color = System.Drawing.Color.DarkBlue;
         }
 
         private void roundButton4_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.Purple;
+            pen.Color = System.Drawing.Color.Purple;
         }
 
         private void roundButton18_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.White;
+            pen.Color = System.Drawing.Color.White;
         }
 
         private void roundButton17_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.LightGray;
+            pen.Color = System.Drawing.Color.LightGray;
         }
 
         private void roundButton16_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.SaddleBrown;
+            pen.Color = System.Drawing.Color.SaddleBrown;
         }
 
         private void roundButton15_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.Pink;
+            pen.Color = System.Drawing.Color.Pink;
         }
 
         private void roundButton14_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.Yellow;//-
+            pen.Color = System.Drawing.Color.Yellow;
         }
 
         private void roundButton13_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.LightYellow;//-
+            pen.Color = System.Drawing.Color.LightYellow;
         }
 
         private void roundButton3_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.YellowGreen;
+            pen.Color = System.Drawing.Color.YellowGreen;
         }
 
         private void roundButton2_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.LightBlue;
+            pen.Color = System.Drawing.Color.LightBlue;
         }
 
         private void roundButton20_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.CornflowerBlue;//-
+            pen.Color = System.Drawing.Color.CornflowerBlue;
         }
 
         private void roundButton19_Click(object sender, EventArgs e)
         {
-            p.Color = System.Drawing.Color.Purple;//-
+            pen.Color = System.Drawing.Color.Purple;
         }
 
         private void nightLabel5_Click(object sender, EventArgs e)
@@ -231,40 +182,67 @@ namespace drawing_app
 
         private void savefile_btn_Click(object sender, EventArgs e)
         {
-            int width = EmptyCanva.Size.Width;
-            int height = EmptyCanva.Size.Height;
-
-            Bitmap bm = new Bitmap(width, height);
-            //EmptyCanva.DrawToBitmap(bm, new Rectangle(0, 0, width, height));
-
-            SaveFileDialog sf = new SaveFileDialog();
-            //sf.FileName = "url" + savefilenumber + "_qrcode";
-            sf.Filter = "Bitmap Image (.bmp)|*.bmp|Gif Image (.gif)|*.gif|JPEG Image (.jpeg)|*.jpeg|Png Image (.png)|*.png|Tiff Image (.tiff)|*.tiff|Wmf Image (.wmf)|*.wmf";
-            sf.ShowDialog();
-            var path = sf.FileName;
-            bm.Save(path);
-            MessageBox.Show("Saved successfully!✔️");
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "JPG(*.JPG)|*.jpg";
+            sfd.FileName = "MyWork_" + SavefileNumber;
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+               SavefileNumber++;
+               myImage.Save(sfd.FileName);
+            }
             
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            PBwidth = Canva.Width;
+            PBheight = Canva.Height;
+            beginPaint = true;
+            myImage = new Bitmap(PBwidth, PBheight); //create new bitmap img.
+            Graphics g = Graphics.FromImage(myImage);
+            Canva.Image = myImage;
+            pen.Width = thickness_TrackBar.Value;
+            thickness_Numeric.Value = thickness_TrackBar.Value;
         }
 
-        private void EmptyCanva_MouseDown_1(object sender, MouseEventArgs e)
+        private void Canva_MouseMove(object sender, MouseEventArgs e)
         {
-            old = e.Location;
+            if (beginMove)
+            {
+                Graphics gp = Graphics.FromImage(myImage);  //create the canva in the past bitmap , as drawing
+                gp.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                gp.DrawLine(pen, currentXpos, currentYpos, e.X, e.Y);//draw line
+                // again to direct the drown pic to show on picbox
+                Canva.Image = myImage;
+                //again tp record currnt mouse value , prepare for the next move of mouse drawing
+                currentXpos = e.X;
+                currentYpos = e.Y;
+            }
         }
 
-        private void EmptyCanva_MouseMove_1(object sender, MouseEventArgs e)
+        private void Canva_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
-                current = e.Location;
-                g.DrawLine(p, old, current);
-                old = current;
+                beginMove = false;
+                currentXpos = 0;
+                currentYpos = 0;
             }
         }
+
+        private void Canva_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (beginPaint == true)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    beginMove = true;
+                    currentXpos = e.X;
+                    currentYpos = e.Y;
+                }
+            }
+        }
+
+        
     }
 }

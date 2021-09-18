@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DrawingApp-icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="ButtonCircle.FormsPlugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Plugins.Forms.ButtonCircle.2.0.3\lib\netstandard2.0\ButtonCircle.FormsPlugin.Abstractions.dll</HintPath>
@@ -94,6 +97,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo-icon %28used%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DrawingApp-icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,16 @@
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\bin\Release\drawing_app.exe.config
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\bin\Release\drawing_app.exe
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\bin\Release\drawing_app.pdb
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\bin\Release\ButtonCircle.FormsPlugin.Abstractions.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\bin\Release\ReaLTaiizor.dll
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\bin\Release\ButtonCircle.FormsPlugin.Abstractions.pdb
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\bin\Release\ButtonCircle.FormsPlugin.Abstractions.xml
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\bin\Release\ReaLTaiizor.xml
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\obj\Release\drawing_app.csproj.AssemblyReference.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\obj\Release\drawing_app.Properties.Resources.resources
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\obj\Release\drawing_app.csproj.GenerateResource.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\obj\Release\drawing_app.csproj.CoreCompileInputs.cache
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\obj\Release\drawing_app.csproj.CopyComplete
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\obj\Release\drawing_app.exe
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\obj\Release\drawing_app.pdb
+D:\coding\c#-github\c-sharp-learning-and-works\projects-windows form\Project-4-Drawing_app\drawing_app\drawing_app\obj\Release\drawing_app.EasyCalc.resources

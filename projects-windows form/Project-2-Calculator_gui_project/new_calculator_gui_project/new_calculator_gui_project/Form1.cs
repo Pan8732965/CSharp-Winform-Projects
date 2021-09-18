@@ -18,11 +18,7 @@ namespace new_calculator_gui_project
         bool number_button_clicked = false;
         string operation = "";
         string function = "";
-        
-        //problem:1.keypressed problem-->backspace keypress didn't work;
-        
-        //problem:2.when complete calculate one number,at that time if i enter a new 
-        //number,it's can't let user enter a new number to calculate (it'll enter at the old number)
+       
         public Calculator()
         {
             InitializeComponent();
@@ -48,10 +44,6 @@ namespace new_calculator_gui_project
                 result.Text = b.Text;
                 gotUserResult = false;
             }
-            /*if (operation_clicked == true)
-            {
-                result.Text = "0";
-            }*/
             
                 
         }

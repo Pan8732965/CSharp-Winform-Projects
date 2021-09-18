@@ -31,15 +31,14 @@ namespace drawing_app
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new ReaLTaiizor.Controls.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.EmptyCanvas = new ReaLTaiizor.Controls.Panel();
+            this.SaveFileLabel = new ReaLTaiizor.Controls.NightLabel();
             this.show_ptx_Label = new ReaLTaiizor.Controls.CrownLabel();
+            this.savefile_btn = new ReaLTaiizor.Controls.Button();
             this.thickness_TrackBar = new ReaLTaiizor.Controls.DungeonTrackBar();
             this.crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
             this.thickness_Numeric = new ReaLTaiizor.Controls.CrownNumeric();
-            this.redo = new ReaLTaiizor.Controls.Button();
-            this.undo_btn = new ReaLTaiizor.Controls.Button();
-            this.savefile_btn = new ReaLTaiizor.Controls.Button();
-            this.PaintBucket_btn = new ReaLTaiizor.Controls.Button();
-            this.pencil_btn = new ReaLTaiizor.Controls.Button();
             this.eraser_btn = new ReaLTaiizor.Controls.Button();
             this.pen_btn = new ReaLTaiizor.Controls.Button();
             this.labelClearAll = new ReaLTaiizor.Controls.NightLabel();
@@ -47,13 +46,8 @@ namespace drawing_app
             this.crownDockPanel1 = new ReaLTaiizor.Docking.Crown.CrownDockPanel();
             this.crownDockPanel2 = new ReaLTaiizor.Docking.Crown.CrownDockPanel();
             this.crownDockPanel3 = new ReaLTaiizor.Docking.Crown.CrownDockPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.SaveFileLabel = new ReaLTaiizor.Controls.NightLabel();
-            this.undoLabel = new ReaLTaiizor.Controls.NightLabel();
-            this.RedoLabel = new ReaLTaiizor.Controls.NightLabel();
             this.SavePicFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.EmptyCanvas = new ReaLTaiizor.Controls.Panel();
-            this.EmptyCanva = new ReaLTaiizor.Controls.Panel();
+            this.Canva = new System.Windows.Forms.PictureBox();
             this.roundButton20 = new drawing_app.RoundButton();
             this.roundButton19 = new drawing_app.RoundButton();
             this.roundButton18 = new drawing_app.RoundButton();
@@ -75,20 +69,17 @@ namespace drawing_app
             this.roundButton2 = new drawing_app.RoundButton();
             this.roundButton1 = new drawing_app.RoundButton();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.thickness_Numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thickness_Numeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Canva)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
-            this.panel1.Controls.Add(this.EmptyCanvas);
-            this.panel1.Controls.Add(this.RedoLabel);
-            this.panel1.Controls.Add(this.undoLabel);
-            this.panel1.Controls.Add(this.SaveFileLabel);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.redo);
-            this.panel1.Controls.Add(this.undo_btn);
+            this.panel1.Controls.Add(this.EmptyCanvas);
+            this.panel1.Controls.Add(this.SaveFileLabel);
             this.panel1.Controls.Add(this.show_ptx_Label);
             this.panel1.Controls.Add(this.savefile_btn);
             this.panel1.Controls.Add(this.thickness_TrackBar);
@@ -114,8 +105,6 @@ namespace drawing_app
             this.panel1.Controls.Add(this.roundButton3);
             this.panel1.Controls.Add(this.roundButton2);
             this.panel1.Controls.Add(this.roundButton1);
-            this.panel1.Controls.Add(this.PaintBucket_btn);
-            this.panel1.Controls.Add(this.pencil_btn);
             this.panel1.Controls.Add(this.eraser_btn);
             this.panel1.Controls.Add(this.pen_btn);
             this.panel1.Controls.Add(this.labelClearAll);
@@ -124,14 +113,50 @@ namespace drawing_app
             this.panel1.Controls.Add(this.crownDockPanel2);
             this.panel1.Controls.Add(this.crownDockPanel3);
             this.panel1.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
-            this.panel1.Location = new System.Drawing.Point(1, -3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(1, -2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.panel1.Size = new System.Drawing.Size(1613, 180);
+            this.panel1.Size = new System.Drawing.Size(1613, 292);
             this.panel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             this.panel1.TabIndex = 0;
             this.panel1.Text = "panel1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::drawing_app.Properties.Resources.logo_icon__used_;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 38);
+            this.pictureBox1.TabIndex = 43;
+            this.pictureBox1.TabStop = false;
+            // 
+            // EmptyCanvas
+            // 
+            this.EmptyCanvas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
+            this.EmptyCanvas.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
+            this.EmptyCanvas.Location = new System.Drawing.Point(0, 174);
+            this.EmptyCanvas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmptyCanvas.Name = "EmptyCanvas";
+            this.EmptyCanvas.Padding = new System.Windows.Forms.Padding(5);
+            this.EmptyCanvas.Size = new System.Drawing.Size(1493, 779);
+            this.EmptyCanvas.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            this.EmptyCanvas.TabIndex = 1;
+            this.EmptyCanvas.Text = "panel2";
+            // 
+            // SaveFileLabel
+            // 
+            this.SaveFileLabel.AutoSize = true;
+            this.SaveFileLabel.BackColor = System.Drawing.Color.Transparent;
+            this.SaveFileLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.SaveFileLabel.ForeColor = System.Drawing.Color.White;
+            this.SaveFileLabel.Location = new System.Drawing.Point(101, 146);
+            this.SaveFileLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SaveFileLabel.Name = "SaveFileLabel";
+            this.SaveFileLabel.Size = new System.Drawing.Size(72, 19);
+            this.SaveFileLabel.TabIndex = 44;
+            this.SaveFileLabel.Text = "Save File";
             // 
             // show_ptx_Label
             // 
@@ -144,6 +169,24 @@ namespace drawing_app
             this.show_ptx_Label.Size = new System.Drawing.Size(0, 21);
             this.show_ptx_Label.TabIndex = 42;
             // 
+            // savefile_btn
+            // 
+            this.savefile_btn.BackColor = System.Drawing.Color.Transparent;
+            this.savefile_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.savefile_btn.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.savefile_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.savefile_btn.Image = ((System.Drawing.Image)(resources.GetObject("savefile_btn.Image")));
+            this.savefile_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.savefile_btn.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.savefile_btn.Location = new System.Drawing.Point(101, 61);
+            this.savefile_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.savefile_btn.Name = "savefile_btn";
+            this.savefile_btn.PressedColor = System.Drawing.Color.Gray;
+            this.savefile_btn.Size = new System.Drawing.Size(81, 82);
+            this.savefile_btn.TabIndex = 1;
+            this.savefile_btn.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.savefile_btn.Click += new System.EventHandler(this.savefile_btn_Click);
+            // 
             // thickness_TrackBar
             // 
             this.thickness_TrackBar.BackColor = System.Drawing.Color.Silver;
@@ -153,9 +196,9 @@ namespace drawing_app
             this.thickness_TrackBar.EmptyBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.thickness_TrackBar.FillBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(99)))), ((int)(((byte)(50)))));
             this.thickness_TrackBar.JumpToMouse = false;
-            this.thickness_TrackBar.Location = new System.Drawing.Point(512, 148);
-            this.thickness_TrackBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.thickness_TrackBar.Maximum = 50;
+            this.thickness_TrackBar.Location = new System.Drawing.Point(461, 97);
+            this.thickness_TrackBar.Margin = new System.Windows.Forms.Padding(4);
+            this.thickness_TrackBar.Maximum = 100;
             this.thickness_TrackBar.Minimum = 0;
             this.thickness_TrackBar.MinimumSize = new System.Drawing.Size(63, 28);
             this.thickness_TrackBar.Name = "thickness_TrackBar";
@@ -174,7 +217,7 @@ namespace drawing_app
             this.crownLabel1.AutoSize = true;
             this.crownLabel1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.crownLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.crownLabel1.Location = new System.Drawing.Point(777, 122);
+            this.crownLabel1.Location = new System.Drawing.Point(697, 140);
             this.crownLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.crownLabel1.Name = "crownLabel1";
             this.crownLabel1.Size = new System.Drawing.Size(35, 21);
@@ -183,99 +226,12 @@ namespace drawing_app
             // 
             // thickness_Numeric
             // 
-            this.thickness_Numeric.Location = new System.Drawing.Point(384, 148);
-            this.thickness_Numeric.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.thickness_Numeric.Location = new System.Drawing.Point(569, 140);
+            this.thickness_Numeric.Margin = new System.Windows.Forms.Padding(4);
             this.thickness_Numeric.Name = "thickness_Numeric";
             this.thickness_Numeric.Size = new System.Drawing.Size(120, 25);
             this.thickness_Numeric.TabIndex = 1;
             this.thickness_Numeric.ValueChanged += new System.EventHandler(this.thickness_Numeric_ValueChanged);
-            // 
-            // redo
-            // 
-            this.redo.BackColor = System.Drawing.Color.Transparent;
-            this.redo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.redo.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.redo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.redo.Image = ((System.Drawing.Image)(resources.GetObject("redo.Image")));
-            this.redo.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.redo.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.redo.Location = new System.Drawing.Point(267, 61);
-            this.redo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.redo.Name = "redo";
-            this.redo.PressedColor = System.Drawing.Color.Gray;
-            this.redo.Size = new System.Drawing.Size(65, 85);
-            this.redo.TabIndex = 3;
-            this.redo.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // undo_btn
-            // 
-            this.undo_btn.BackColor = System.Drawing.Color.Transparent;
-            this.undo_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.undo_btn.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.undo_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.undo_btn.Image = ((System.Drawing.Image)(resources.GetObject("undo_btn.Image")));
-            this.undo_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.undo_btn.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.undo_btn.Location = new System.Drawing.Point(190, 61);
-            this.undo_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.undo_btn.Name = "undo_btn";
-            this.undo_btn.PressedColor = System.Drawing.Color.Gray;
-            this.undo_btn.Size = new System.Drawing.Size(69, 85);
-            this.undo_btn.TabIndex = 2;
-            this.undo_btn.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // savefile_btn
-            // 
-            this.savefile_btn.BackColor = System.Drawing.Color.Transparent;
-            this.savefile_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.savefile_btn.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.savefile_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.savefile_btn.Image = ((System.Drawing.Image)(resources.GetObject("savefile_btn.Image")));
-            this.savefile_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.savefile_btn.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.savefile_btn.Location = new System.Drawing.Point(101, 61);
-            this.savefile_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.savefile_btn.Name = "savefile_btn";
-            this.savefile_btn.PressedColor = System.Drawing.Color.Gray;
-            this.savefile_btn.Size = new System.Drawing.Size(81, 82);
-            this.savefile_btn.TabIndex = 1;
-            this.savefile_btn.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.savefile_btn.Click += new System.EventHandler(this.savefile_btn_Click);
-            // 
-            // PaintBucket_btn
-            // 
-            this.PaintBucket_btn.BackColor = System.Drawing.Color.Transparent;
-            this.PaintBucket_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PaintBucket_btn.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.PaintBucket_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PaintBucket_btn.Image = ((System.Drawing.Image)(resources.GetObject("PaintBucket_btn.Image")));
-            this.PaintBucket_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PaintBucket_btn.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.PaintBucket_btn.Location = new System.Drawing.Point(569, 66);
-            this.PaintBucket_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PaintBucket_btn.Name = "PaintBucket_btn";
-            this.PaintBucket_btn.PressedColor = System.Drawing.Color.Gray;
-            this.PaintBucket_btn.Size = new System.Drawing.Size(70, 70);
-            this.PaintBucket_btn.TabIndex = 17;
-            this.PaintBucket_btn.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.PaintBucket_btn.Click += new System.EventHandler(this.PaintBucket_btn_Click);
-            // 
-            // pencil_btn
-            // 
-            this.pencil_btn.BackColor = System.Drawing.Color.Transparent;
-            this.pencil_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pencil_btn.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.pencil_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.pencil_btn.Image = ((System.Drawing.Image)(resources.GetObject("pencil_btn.Image")));
-            this.pencil_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.pencil_btn.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.pencil_btn.Location = new System.Drawing.Point(477, 69);
-            this.pencil_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pencil_btn.Name = "pencil_btn";
-            this.pencil_btn.PressedColor = System.Drawing.Color.Gray;
-            this.pencil_btn.Size = new System.Drawing.Size(70, 67);
-            this.pencil_btn.TabIndex = 16;
-            this.pencil_btn.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // eraser_btn
             // 
@@ -286,11 +242,11 @@ namespace drawing_app
             this.eraser_btn.Image = ((System.Drawing.Image)(resources.GetObject("eraser_btn.Image")));
             this.eraser_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.eraser_btn.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.eraser_btn.Location = new System.Drawing.Point(662, 66);
-            this.eraser_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.eraser_btn.Location = new System.Drawing.Point(366, 78);
+            this.eraser_btn.Margin = new System.Windows.Forms.Padding(4);
             this.eraser_btn.Name = "eraser_btn";
             this.eraser_btn.PressedColor = System.Drawing.Color.Gray;
-            this.eraser_btn.Size = new System.Drawing.Size(74, 70);
+            this.eraser_btn.Size = new System.Drawing.Size(75, 70);
             this.eraser_btn.TabIndex = 15;
             this.eraser_btn.TextAlignment = System.Drawing.StringAlignment.Center;
             this.eraser_btn.Click += new System.EventHandler(this.eraser_btn_Click);
@@ -304,11 +260,11 @@ namespace drawing_app
             this.pen_btn.Image = ((System.Drawing.Image)(resources.GetObject("pen_btn.Image")));
             this.pen_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.pen_btn.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.pen_btn.Location = new System.Drawing.Point(384, 69);
-            this.pen_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pen_btn.Location = new System.Drawing.Point(270, 78);
+            this.pen_btn.Margin = new System.Windows.Forms.Padding(4);
             this.pen_btn.Name = "pen_btn";
             this.pen_btn.PressedColor = System.Drawing.Color.Gray;
-            this.pen_btn.Size = new System.Drawing.Size(72, 67);
+            this.pen_btn.Size = new System.Drawing.Size(72, 68);
             this.pen_btn.TabIndex = 11;
             this.pen_btn.TextAlignment = System.Drawing.StringAlignment.Center;
             this.pen_btn.Click += new System.EventHandler(this.pen_btn_Click);
@@ -319,7 +275,7 @@ namespace drawing_app
             this.labelClearAll.BackColor = System.Drawing.Color.Transparent;
             this.labelClearAll.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labelClearAll.ForeColor = System.Drawing.Color.White;
-            this.labelClearAll.Location = new System.Drawing.Point(8, 152);
+            this.labelClearAll.Location = new System.Drawing.Point(12, 147);
             this.labelClearAll.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelClearAll.Name = "labelClearAll";
             this.labelClearAll.Size = new System.Drawing.Size(69, 19);
@@ -337,7 +293,7 @@ namespace drawing_app
             this.clear_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.clear_btn.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.clear_btn.Location = new System.Drawing.Point(12, 61);
-            this.clear_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clear_btn.Margin = new System.Windows.Forms.Padding(4);
             this.clear_btn.Name = "clear_btn";
             this.clear_btn.PressedColor = System.Drawing.Color.Gray;
             this.clear_btn.Size = new System.Drawing.Size(81, 85);
@@ -349,102 +305,41 @@ namespace drawing_app
             // 
             this.crownDockPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.crownDockPanel1.Location = new System.Drawing.Point(0, 55);
-            this.crownDockPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crownDockPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.crownDockPanel1.Name = "crownDockPanel1";
-            this.crownDockPanel1.Size = new System.Drawing.Size(345, 155);
+            this.crownDockPanel1.Size = new System.Drawing.Size(203, 155);
             this.crownDockPanel1.TabIndex = 1;
             // 
             // crownDockPanel2
             // 
             this.crownDockPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.crownDockPanel2.Location = new System.Drawing.Point(361, 53);
-            this.crownDockPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crownDockPanel2.Location = new System.Drawing.Point(232, 55);
+            this.crownDockPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.crownDockPanel2.Name = "crownDockPanel2";
-            this.crownDockPanel2.Size = new System.Drawing.Size(470, 130);
+            this.crownDockPanel2.Size = new System.Drawing.Size(583, 130);
             this.crownDockPanel2.TabIndex = 10;
             // 
             // crownDockPanel3
             // 
             this.crownDockPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.crownDockPanel3.Location = new System.Drawing.Point(847, 53);
-            this.crownDockPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crownDockPanel3.Location = new System.Drawing.Point(847, 52);
+            this.crownDockPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.crownDockPanel3.Name = "crownDockPanel3";
             this.crownDockPanel3.Size = new System.Drawing.Size(439, 130);
             this.crownDockPanel3.TabIndex = 18;
             // 
-            // pictureBox1
+            // Canva
             // 
-            this.pictureBox1.Image = global::drawing_app.Properties.Resources.logo_icon__used_;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 37);
-            this.pictureBox1.TabIndex = 43;
-            this.pictureBox1.TabStop = false;
-            // 
-            // SaveFileLabel
-            // 
-            this.SaveFileLabel.AutoSize = true;
-            this.SaveFileLabel.BackColor = System.Drawing.Color.Transparent;
-            this.SaveFileLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.SaveFileLabel.ForeColor = System.Drawing.Color.White;
-            this.SaveFileLabel.Location = new System.Drawing.Point(97, 151);
-            this.SaveFileLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.SaveFileLabel.Name = "SaveFileLabel";
-            this.SaveFileLabel.Size = new System.Drawing.Size(72, 19);
-            this.SaveFileLabel.TabIndex = 44;
-            this.SaveFileLabel.Text = "Save File";
-            // 
-            // undoLabel
-            // 
-            this.undoLabel.AutoSize = true;
-            this.undoLabel.BackColor = System.Drawing.Color.Transparent;
-            this.undoLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.undoLabel.ForeColor = System.Drawing.Color.White;
-            this.undoLabel.Location = new System.Drawing.Point(198, 150);
-            this.undoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.undoLabel.Name = "undoLabel";
-            this.undoLabel.Size = new System.Drawing.Size(49, 19);
-            this.undoLabel.TabIndex = 45;
-            this.undoLabel.Text = "Undo";
-            // 
-            // RedoLabel
-            // 
-            this.RedoLabel.AutoSize = true;
-            this.RedoLabel.BackColor = System.Drawing.Color.Transparent;
-            this.RedoLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.RedoLabel.ForeColor = System.Drawing.Color.White;
-            this.RedoLabel.Location = new System.Drawing.Point(272, 151);
-            this.RedoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.RedoLabel.Name = "RedoLabel";
-            this.RedoLabel.Size = new System.Drawing.Size(48, 19);
-            this.RedoLabel.TabIndex = 46;
-            this.RedoLabel.Text = "Redo";
-            // 
-            // EmptyCanvas
-            // 
-            this.EmptyCanvas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
-            this.EmptyCanvas.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
-            this.EmptyCanvas.Location = new System.Drawing.Point(0, 174);
-            this.EmptyCanvas.Name = "EmptyCanvas";
-            this.EmptyCanvas.Padding = new System.Windows.Forms.Padding(5);
-            this.EmptyCanvas.Size = new System.Drawing.Size(1494, 779);
-            this.EmptyCanvas.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.EmptyCanvas.TabIndex = 1;
-            this.EmptyCanvas.Text = "panel2";
-            // 
-            // EmptyCanva
-            // 
-            this.EmptyCanva.BackColor = System.Drawing.Color.White;
-            this.EmptyCanva.EdgeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(41)))), ((int)(((byte)(50)))));
-            this.EmptyCanva.Location = new System.Drawing.Point(1, 177);
-            this.EmptyCanva.Name = "EmptyCanva";
-            this.EmptyCanva.Padding = new System.Windows.Forms.Padding(5);
-            this.EmptyCanva.Size = new System.Drawing.Size(1494, 793);
-            this.EmptyCanva.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.EmptyCanva.TabIndex = 1;
-            this.EmptyCanva.Text = "panel2";
-            this.EmptyCanva.MouseDown += new System.Windows.Forms.MouseEventHandler(this.EmptyCanva_MouseDown_1);
-            this.EmptyCanva.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EmptyCanva_MouseMove_1);
+            this.Canva.BackColor = System.Drawing.Color.White;
+            this.Canva.Location = new System.Drawing.Point(1, 182);
+            this.Canva.Margin = new System.Windows.Forms.Padding(4);
+            this.Canva.Name = "Canva";
+            this.Canva.Size = new System.Drawing.Size(1285, 768);
+            this.Canva.TabIndex = 1;
+            this.Canva.TabStop = false;
+            this.Canva.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Canva_MouseDown);
+            this.Canva.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Canva_MouseMove);
+            this.Canva.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Canva_MouseUp);
             // 
             // roundButton20
             // 
@@ -513,7 +408,7 @@ namespace drawing_app
             this.roundButton16.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.roundButton16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton16.Image = ((System.Drawing.Image)(resources.GetObject("roundButton16.Image")));
-            this.roundButton16.Location = new System.Drawing.Point(946, 109);
+            this.roundButton16.Location = new System.Drawing.Point(947, 109);
             this.roundButton16.Margin = new System.Windows.Forms.Padding(4);
             this.roundButton16.Name = "roundButton16";
             this.roundButton16.Size = new System.Drawing.Size(33, 32);
@@ -589,7 +484,7 @@ namespace drawing_app
             this.roundButton11.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.roundButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton11.Image = ((System.Drawing.Image)(resources.GetObject("roundButton11.Image")));
-            this.roundButton11.Location = new System.Drawing.Point(946, 66);
+            this.roundButton11.Location = new System.Drawing.Point(947, 66);
             this.roundButton11.Margin = new System.Windows.Forms.Padding(4);
             this.roundButton11.Name = "roundButton11";
             this.roundButton11.Size = new System.Drawing.Size(33, 32);
@@ -649,7 +544,7 @@ namespace drawing_app
             this.roundButton7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.roundButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton7.Image = ((System.Drawing.Image)(resources.GetObject("roundButton7.Image")));
-            this.roundButton7.Location = new System.Drawing.Point(1110, 66);
+            this.roundButton7.Location = new System.Drawing.Point(1109, 66);
             this.roundButton7.Margin = new System.Windows.Forms.Padding(4);
             this.roundButton7.Name = "roundButton7";
             this.roundButton7.Size = new System.Drawing.Size(33, 32);
@@ -709,7 +604,7 @@ namespace drawing_app
             this.roundButton3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.roundButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton3.Image = ((System.Drawing.Image)(resources.GetObject("roundButton3.Image")));
-            this.roundButton3.Location = new System.Drawing.Point(1110, 109);
+            this.roundButton3.Location = new System.Drawing.Point(1109, 109);
             this.roundButton3.Margin = new System.Windows.Forms.Padding(4);
             this.roundButton3.Name = "roundButton3";
             this.roundButton3.Size = new System.Drawing.Size(33, 32);
@@ -753,17 +648,20 @@ namespace drawing_app
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1285, 952);
-            this.Controls.Add(this.EmptyCanva);
+            this.Controls.Add(this.Canva);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(1301, 991);
+            this.MinimumSize = new System.Drawing.Size(1301, 991);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Easy Drawing APP";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.thickness_Numeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thickness_Numeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Canva)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -775,17 +673,13 @@ namespace drawing_app
         private ReaLTaiizor.Controls.NightLabel labelClearAll;
         private ReaLTaiizor.Controls.Button clear_btn;
         private ReaLTaiizor.Docking.Crown.CrownDockPanel crownDockPanel1;
-        private ReaLTaiizor.Controls.Button redo;
-        private ReaLTaiizor.Controls.Button undo_btn;
         private ReaLTaiizor.Docking.Crown.CrownDockPanel crownDockPanel2;
         private ReaLTaiizor.Controls.Button pen_btn;
         private ReaLTaiizor.Controls.DungeonTrackBar thickness_TrackBar;
         private ReaLTaiizor.Controls.CrownNumeric thickness_Numeric;
         private ReaLTaiizor.Controls.CrownLabel crownLabel1;
         private ReaLTaiizor.Controls.Button eraser_btn;
-        private ReaLTaiizor.Controls.Button pencil_btn;
         private ReaLTaiizor.Docking.Crown.CrownDockPanel crownDockPanel3;
-        private ReaLTaiizor.Controls.Button PaintBucket_btn;
         private RoundButton roundButton1;
         private RoundButton roundButton12;
         private RoundButton roundButton11;
@@ -808,12 +702,10 @@ namespace drawing_app
         private RoundButton roundButton19;
         private ReaLTaiizor.Controls.CrownLabel show_ptx_Label;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private ReaLTaiizor.Controls.NightLabel RedoLabel;
-        private ReaLTaiizor.Controls.NightLabel undoLabel;
         private ReaLTaiizor.Controls.NightLabel SaveFileLabel;
         private System.Windows.Forms.SaveFileDialog SavePicFileDialog;
         private ReaLTaiizor.Controls.Panel EmptyCanvas;
-        private ReaLTaiizor.Controls.Panel EmptyCanva;
+        private System.Windows.Forms.PictureBox Canva;
     }
 }
 
